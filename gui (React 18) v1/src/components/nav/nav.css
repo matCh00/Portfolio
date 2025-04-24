@@ -1,0 +1,40 @@
+nav {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  z-index: 2;
+}
+
+nav a {
+  font-size: 1.3rem;
+  display: flex;
+  padding: 0.9rem;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-light);
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  nav a {
+    padding: clamp(.4em, .2em + 2vw, 1.5em);
+    font-size: clamp(1.1rem, .4rem + 4vw, 3rem);
+  }
+}

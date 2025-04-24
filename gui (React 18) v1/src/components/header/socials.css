@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: -6rem;
+  top: 20vh;
+}
+
+.socials a {
+  font-size: 1.4em;
+}

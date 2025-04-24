@@ -1,0 +1,59 @@
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 3rem;
+  width: 100%;
+}
+
+
+.about-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+.about-content-card > .clr-secondary:first-child {
+  font-size: 1.5rem;
+}
+
+
+/* szeroki monitor */
+@media screen and (width > 82rem) {
+  #about {
+    padding-top: 9rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+}
+
+/* zwykły monitor */
+@media screen and (width <= 82rem) {
+  #about {
+    padding-top: 7.5rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+}
+
+/* tablety */
+@media screen and (width <= 62rem) {
+  #about {
+    padding-top: 6rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* smartfony */
+@media screen and (width <= 43rem) {
+  #about {
+    padding-top: 4.5rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,241 @@
+/* główny CSS */
+
+
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-neutral: hsl(255, 55%, 56%);
+  --color-primary: hsl(0, 0%, 93%);
+  --color-secondary: hsl(183, 100%, 35%);
+  
+  --color-neutral-dark: hsl(255, 55%, 26%);
+  --color-neutral-darker: hsl(255, 55%, 16%);
+  --color-neutral-darkest: hsl(246, 100%, 5%); /*hsl(255, 55%, 3%);*/
+  --color-primary-dark: hsl(0, 0%, 73%);
+  
+  --color-blur: rgba(48, 30, 103, 0.2);
+  --color-card: rgba(48, 30, 103, 0.5);
+  
+  --ff: "Lato", sans-serif;
+  --fw: 500;
+}
+
+
+/* główne */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline-color: transparent;
+  text-decoration: none;
+  list-style: none;
+  /* background: rgb(0 100 0 / 0.05) !important; */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+
+  background: var(--color-neutral-darkest);
+  color: var(--color-primary);
+}
+
+
+/* brak borderu po naciśnięciu na mobilkach */
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* pomocnicze */
+.bg-neutral {
+  background: var(--color-neutral-dark);
+}
+.bg-primary {
+  background: var(--color-primary);
+}
+.clr-neutral {
+  color: var(--color-neutral-dark);
+}
+.clr-primary {
+  color: var(--color-primary);
+}
+.clr-primary-dark {
+  color: var(--color-primary-dark);
+}
+.clr-secondary {
+  color: var(--color-secondary);
+}
+
+
+/* sekcje */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.section-header {
+  margin-bottom: 2rem;  /* odstęp pomiędzy nagłówkiem sekcji a jego contentem */
+}
+
+
+/* kontener */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.container h4 {
+  color: var(--color-primary-dark);
+}
+
+.container h1 {
+  font-size: 2em;  /* h1 większe */
+  color: var(--color-secondary);
+}
+
+.container h3 {
+  color: var(--color-primary);
+}
+
+
+/* link */
+a {
+  color: var(--color-secondary);
+  transition: color 300ms ease;
+}
+a:hover {
+  color: var(--color-primary);
+}
+
+
+/* ikony */
+.bigger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+/* szeroki monitor */
+@media screen and (width > 82rem) {
+  body {
+    font-size: 1.2rem;  /* większa czcionka */
+  }
+  section {
+    padding: 6rem 9rem;  /* padding sekcji */
+  }
+  section:last-of-type {
+    padding-bottom: 12rem;  /* odstęp pomiędzy ostatnią sekcją a footerem */
+  }
+}
+
+/* zwykły monitor */
+@media screen and (width <= 82rem) {
+  body {
+    font-size: 1.1rem;  /* większa czcionka */
+  }
+  section {
+    padding: 5rem 6rem;  /* padding sekcji */
+  }
+  section:last-of-type {
+    padding-bottom: 12rem;  /* odstęp pomiędzy ostatnią sekcją a footerem */
+  }
+}
+
+/* tablety */
+@media screen and (width <= 62rem) {
+  body {
+    font-size: 1.1rem;  /* większa czcionka */
+  }
+  section {
+    padding: 4rem 5rem;  /* padding sekcji */
+  }
+  section:first-of-type {
+    padding-top: 0rem;  /* mniejszy górny padding */
+  }
+  section:last-of-type {
+    padding-bottom: 8rem;  /* odstęp pomiędzy ostatnią sekcją a footerem */
+  }
+}
+
+/* smartfony */
+@media screen and (width <= 43rem) {
+  body {
+    font-size: 0.8rem;  /* mniejsza czcionka */
+  }
+  section {
+    padding: 3rem 3rem;  /* padding sekcji */
+  }
+  section:first-of-type {
+    padding-top: 0rem;  /* mniejszy górny padding */
+  }
+  section:last-of-type {
+    padding-bottom: 6rem;  /* odstęp pomiędzy ostatnią sekcją a footerem */
+  }
+}
+
+
+/* button */
+.btn {
+  color: var(--color-primary);
+  background: var(--color-neutral-dark);
+  border: 1px solid var(--color-neutral-dark);
+
+  padding: 0.5em 1em;
+  border-radius: 1.5rem;
+  white-space: nowrap;
+  
+  cursor: pointer;
+  transition: background-color 400ms ease;  /* animacja */
+}
+
+.btn:hover {
+  color: var(--color-neutral-dark);
+  background: var(--color-primary);
+}
+
+.btn-primary {
+  color: var(--color-neutral-dark);
+  background: var(--color-secondary);
+}
+
+
+
+.hidden {
+  opacity: 0;
+  /*filter: blur(5px);*/
+  /*transform: translateX(-5%);*/
+  transition: opacity 1.5s
+}
+.show {
+  opacity: 1;
+  /*filter: blur(0);*/
+  /*transform: translateX(0);*/
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
