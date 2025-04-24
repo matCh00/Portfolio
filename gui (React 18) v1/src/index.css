@@ -1,0 +1,170 @@
+/* główny CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-bg: #030c1f;
+  --color-bg-variant: #192d4a;
+  --color-primary: rgb(77, 181, 255);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-secondary: rgba(77, 181, 255, 0.05);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+
+/* główne */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* tło: https://www.transparenttextures.com/ */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background-image: url(../src/assets/textures/diagonales-decalees.png);
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+
+/* podstawowe style */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+
+/* czcionka */
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+
+/* sekcje */
+section {
+  font-size: 1.1rem;
+  padding: 3em 0 12em 0;
+}
+
+
+/* tytuł sekcji */
+section > h2 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+
+/* opis sekcji */
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+
+/* szary tekst */
+.text-light {
+  color: var(--color-light) !important;
+}
+
+
+/* link */
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--color-white);
+}
+
+
+/* button */
+.btn {
+  padding: 0.7em 1.2em;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  color: var(--color-bg);
+  background: var(--color-white);
+  border-color: transparent;
+}
+.btn-primary {
+  color: var(--color-bg);
+  background: var(--color-primary);
+}
+
+
+/* zdjęcia */
+img {
+  display: block;
+  width: 100%; 
+  object-fit: cover;
+}
+
+
+/* brak borderu po naciśnięciu na mobilkach */
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* średni ekran */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    padding: 2em 0 12em 0;
+  }
+}
+
+
+/* mały ekran */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  
+  section {
+    padding: 3em 0 2em 0;
+    padding-top: 1em;
+  }
+
+  section > h2 {
+    margin-top: 2em;
+  }
+}

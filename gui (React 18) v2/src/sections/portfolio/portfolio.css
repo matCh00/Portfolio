@@ -1,0 +1,100 @@
+#portfolio {
+  background: linear-gradient(45deg, var(--color-neutral-darker), var(--color-neutral-dark), var(--color-neutral-darker));
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+}
+
+
+.portfolio-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.html-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+
+.portfolio-img-container {
+  margin: 0 3rem;
+}
+
+.portfolio-img {
+  height: 25rem;
+  object-fit: contain;
+}
+
+
+.carousel.carousel-slider {
+  padding: 0 0 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel.carousel-slider .control-arrow {
+  display: none;
+}
+
+.carousel .control-dots .dot {
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+}
+
+
+/* szeroki monitor */
+@media screen and (width > 82rem) {
+  #portfolio {
+    margin-block: 6rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+}
+
+/* zwykły monitor */
+@media screen and (width <= 82rem) {
+  #portfolio {
+    margin-block: 5rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+}
+
+/* tablety */
+@media screen and (width <= 62rem) {
+  #portfolio {
+    margin-block: 4rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+  .portfolio-content {
+    gap: 2rem;
+  }
+}
+
+/* smartfony */
+@media screen and (width <= 43rem) {
+  #portfolio {
+    margin-block: 3rem;  /* powiększona przerwa pomiedzy sekcjami */
+  }
+  .portfolio-content {
+    gap: 1.5rem;
+  }
+
+  .carousel {
+    display: none;
+  }
+}

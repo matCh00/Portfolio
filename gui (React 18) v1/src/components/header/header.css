@@ -1,0 +1,136 @@
+:root {
+  --portrait-height: 28vw;
+  --portrait-width: calc(var(--portrait-height) / 1.5);
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 150deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
+header {
+  padding: 3rem 0 12rem 0;
+  overflow: hidden;
+}
+
+.header__container {
+  position: relative;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.header__content {
+  position: relative;
+  margin-top: 15vh;
+}
+
+.header__content h4 {
+  color: var(--color-primary);
+}
+
+
+/* portret */
+.me {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* orb wkoło portretu */
+.me::after {
+  position: absolute;
+  z-index: -1;
+
+  height: 100%;
+  width: 100%;
+
+  transform: scale(0.9);
+  opacity: 1;
+  transition: opacity .7s;
+
+  filter: blur(calc(var(--portrait-height) / 8));
+
+  background-image: linear-gradient(var(--rotate), #4db5ff, #ffffff99 43%, #4db5ff66);
+
+  content: "";
+
+  animation: spin 2.5s linear infinite;
+}
+
+.me__img {
+  border-radius: 1.5rem;
+  transform: rotate(-3deg);
+  transition: var(--transition);
+  overflow: hidden;
+}
+.me__img:hover {
+  transform: rotate(0);
+}
+
+
+/* średni ekran */
+@media screen and (max-width: 1024px) {
+  .socials {
+    display: none !important;
+  }
+  .header__content {
+    margin-top: 5vh;
+  }
+}
+
+
+/* mały ekran */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 3rem 0 2rem 0;
+  }
+}
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  header {
+    padding-top: 5rem;
+  }
+  .header__container {
+    display: block;
+  }
+  .me {
+    width: 60vw;
+    left: calc(50% - 30vw);
+    padding-bottom: 2rem;
+  }
+  :root {
+    --portrait-height: 60vw;
+  }
+}
+
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+  }
+  .me {
+    width: 27vw;
+    left: calc(50% - 14vw);
+  }
+  :root {
+    --portrait-height: 28vw;
+  }
+}
