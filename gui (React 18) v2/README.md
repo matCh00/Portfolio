@@ -2,7 +2,7 @@
 
 ## React + TypScript application
 
-### [matCh00.github.io/Portfolio_v1](https://match00.github.io/Portfolio_v2/)
+### [matCh00.github.io/Portfolio](https://match00.github.io/Portfolio/)
 
 ### Main View
 ![main view](portfolio/public/Portfolio_v2.PNG)
