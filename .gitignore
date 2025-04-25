@@ -67,6 +67,7 @@ ios/
 ### TypeScript ###
 *.tsbuildinfo
 *.js
+!app.js
 
 ### Vue ###
 *.local
