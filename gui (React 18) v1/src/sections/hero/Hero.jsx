@@ -1,8 +1,8 @@
 import React from 'react';
-import './header.css';
-import Actions from './Actions';
+import './hero.css';
+import Actions from '../../components/actions/Actions';
 import ME from '../../assets/personal/me2.jpg';
-import Socials from './Socials';
+import Socials from '../../components/socials/Socials';
 
 /** Nagłówek */
 

@@ -45,37 +45,31 @@ html {
 }
 
 
-/* tło: https://www.transparenttextures.com/ */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background-image: url(../src/assets/textures/diagonales-decalees.png);
   background: var(--color-bg);
   color: var(--color-white);
 }
 
 
-/* podstawowe style */
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
 
 
-/* czcionka */
 h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
 
-/* sekcje */
 section {
   font-size: 1.1rem;
   padding: 3em 0 12em 0;
 }
 
 
-/* tytuł sekcji */
 section > h2 {
   text-align: center;
   color: var(--color-primary);
@@ -83,20 +77,17 @@ section > h2 {
 }
 
 
-/* opis sekcji */
 section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
 
-/* szary tekst */
 .text-light {
   color: var(--color-light) !important;
 }
 
 
-/* link */
 a {
   color: var(--color-primary);
   transition: var(--transition);
@@ -106,7 +97,6 @@ a:hover {
 }
 
 
-/* button */
 .btn {
   padding: 0.7em 1.2em;
   border-radius: 0.4rem;
@@ -127,7 +117,6 @@ a:hover {
 }
 
 
-/* zdjęcia */
 img {
   display: block;
   width: 100%; 
@@ -135,13 +124,11 @@ img {
 }
 
 
-/* brak borderu po naciśnięciu na mobilkach */
 input, textarea, button, select, a {
   -webkit-tap-highlight-color: transparent;
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
@@ -153,7 +140,6 @@ input, textarea, button, select, a {
 }
 
 
-/* mały ekran */
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);

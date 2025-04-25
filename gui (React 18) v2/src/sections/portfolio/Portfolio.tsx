@@ -1,7 +1,7 @@
 // sekcja "Portfolio"
 
 import React from 'react';
-import Card3 from '../../components/Card3/Card3';
+import Card3 from '../../components/card-3/Card3';
 import './portfolio.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
