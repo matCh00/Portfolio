@@ -1,11 +1,17 @@
 # Portfolio v1
 
-## React + JavaScript application
+## React + JavaScript web application
 
-### [matCh00.github.io/Portfolio](https://match00.github.io/Portfolio/)
+run application:   
+* `npm install --legacy-peer-deps`     
+* `npm run start`     
 
-### Main View
-![main view](portfolio/public/Portfolio_v1.PNG)
+deploy application:   
+* `npm run predeploy`  
+* `npm run deploy`  
 
-### Preview  
-![preview](portfolio\public\Portfolio_v1_preview.gif)
+### Preview
+![preview](public/preview.PNG)
+
+### Demo  
+![demo](public/demo.gif)
