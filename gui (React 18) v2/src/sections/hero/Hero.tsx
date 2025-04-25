@@ -1,9 +1,9 @@
 // sekcja GŁÓWNA
 
 import React from 'react';
-import Actions from '../../components/Actions/Actions';
-import HeroPhoto from '../../components/HeroPhoto/HeroPhoto';
-import Socials from '../../components/Socials/Socials';
+import Actions from '../../components/actions/Actions';
+import HeroPhoto from '../../components/hero-photo/HeroPhoto';
+import Socials from '../../components/socials/Socials';
 import './hero.css';
 
 const Hero = () => {

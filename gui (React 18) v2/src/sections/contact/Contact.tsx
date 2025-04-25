@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './contact.css';
-import Card1 from './../../components/Card1/Card1';
+import Card1 from '../../components/card-1/Card1';
 import {MdOutlineEmail} from 'react-icons/md';
 import {RiMessengerLine} from 'react-icons/ri';
 import {BsLinkedin, BsGithub} from 'react-icons/bs';

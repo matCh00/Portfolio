@@ -1,7 +1,7 @@
 // sekcja "Usługi"
 
 import React from 'react';
-import Card2 from '../../components/Card2/Card2';
+import Card2 from '../../components/card-2/Card2';
 import './services.css';
 import {AiOutlineCheck} from 'react-icons/ai';
 

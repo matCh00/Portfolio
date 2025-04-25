@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './about.css';
-import Card1 from './../../components/Card1/Card1';
+import Card1 from '../../components/card-1/Card1';
 import {BiTimeFive} from 'react-icons/bi';
 import {AiOutlineFundProjectionScreen, AiFillHtml5} from 'react-icons/ai';
 import {FaAngular, FaReact} from 'react-icons/fa';
