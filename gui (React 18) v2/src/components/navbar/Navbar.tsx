@@ -1,9 +1,8 @@
-// pasek nawigacji
-
 import React from 'react';
 import './navbar.css';
 import {AiOutlineHome, AiOutlineUser, AiOutlineStar, AiOutlineFundProjectionScreen, AiOutlineCustomerService} from 'react-icons/ai';
 import {BsChatQuote} from 'react-icons/bs';
+
 
 const Navbar = () => {
 

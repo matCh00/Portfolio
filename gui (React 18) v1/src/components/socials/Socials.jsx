@@ -3,7 +3,6 @@ import './socials.css';
 import {BsLinkedin, BsGithub} from 'react-icons/bs';
 import {FaFigma} from 'react-icons/fa';
 
-/** skróty do social mediów */
 
 const Socials = () => {
   return (
@@ -11,7 +10,6 @@ const Socials = () => {
 
       <a href="https://www.linkedin.com/in/mateusz-chalik/" target='_blank'><BsLinkedin/></a>
       <a href="https://github.com/matCh00" target='_blank'><BsGithub/></a>
-      {/* <a href="https://www.figma.com/files/user/1208096365060815619?fuid=1208096365060815619" target='_blank'><FaFigma/></a> */}
 
     </div>
   )

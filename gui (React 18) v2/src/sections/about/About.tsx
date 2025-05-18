@@ -1,5 +1,3 @@
-// sekcja "O mnie"
-
 import React from 'react';
 import './about.css';
 import Card1 from '../../components/card-1/Card1';
@@ -8,6 +6,7 @@ import {AiOutlineFundProjectionScreen, AiFillHtml5} from 'react-icons/ai';
 import {FaAngular, FaReact} from 'react-icons/fa';
 import {DiCss3} from 'react-icons/di';
 import {CgCodeSlash} from 'react-icons/cg';
+
 
 const About = () => {
 
@@ -51,12 +50,10 @@ const About = () => {
           <Card1>
             <div className="about-content-card">
               <CgCodeSlash className='clr-secondary'/>
-              <div>
                 <p>
                   Najczęściej używane technologie <br/>
                   <span style={{fontSize: '1.5rem'}}><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></span>
                 </p>
-              </div>
             </div>
           </Card1>
 

@@ -2,19 +2,17 @@ import React from 'react';
 import './experience.css';
 import {BsPatchCheckFill} from 'react-icons/bs';
 
-/** Doświadczenie */
 
 const Experience = () => {
 
   const experienceFront = [
     {key: 'Angular', value: ''},
     {key: 'TypeScript', value: ''},
-    {key: 'PrimeNg', value: ''},
-    {key: 'Primeflex', value: ''},
     {key: 'React', value: ''},
-    {key: 'JavaScript', value: ''},
+    {key: 'Vue', value: ''},
     {key: 'HTML', value: ''},
     {key: 'CSS/SCSS', value: ''},
+    {key: 'PrimeFaces', value: ''},
   ]
 
   const experienceBackend = [
@@ -22,8 +20,9 @@ const Experience = () => {
     {key: 'Firebase', value: ''},
   ]
 
-  const experienceMobile = [
+  const experienceOthers = [
     {key: 'React Native', value: ''},
+    {key: 'Docker', value: ''},
   ]
 
   return (
@@ -71,10 +70,10 @@ const Experience = () => {
         </div>
 
         <div className="experience__mobile">
-          <h3>Aplikacje mobilne</h3>
+          <h3>Inne</h3>
           <div className="experience__content">
 
-            {experienceMobile.map(e => {
+            {experienceOthers.map(e => {
               return(
                 <article key={e.key} className='experience__details'>
                   <BsPatchCheckFill className='experience__details-icon'/>

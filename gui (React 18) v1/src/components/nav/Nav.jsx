@@ -4,11 +4,9 @@ import {AiOutlineHome, AiOutlineUser, AiOutlineStar, AiOutlineFundProjectionScre
 import {BsChatQuote} from 'react-icons/bs';
 import {RiServiceLine} from 'react-icons/ri';
 
-/** Pasek nawigacji */
 
 const Nav = () => {
 
-  /** położenie sekcji */
   const [headerRect, setHeaderRect] = useState({top: 0, height: 0});
   const [aboutRect, setAboutRect] = useState({top: 0, height: 0});
   const [experienceRect, setExperienceRect] = useState({top: 0, height: 0});
@@ -18,7 +16,6 @@ const Nav = () => {
   const [contactRect, setContactRect] = useState({top: 0, height: 0});
 
 
-  /** aktywna ikonka */
   const [activeNav, setActiveNav] = useState('#');
 
   const highlight = (key) => {
@@ -32,7 +29,6 @@ const Nav = () => {
   }
 
 
-  /** podświetlanie sekcji */
   const handleScroll = () => {
     let s = window.scrollY;
     let aboutTop = headerRect.height;
@@ -58,25 +54,21 @@ const Nav = () => {
   }
 
 
-  /** ustawienie koordynatów */
   const setPos = () => {
     setHeaderRect({top: document.getElementById('header').getBoundingClientRect().top, height: document.getElementById('header').getBoundingClientRect().height});
     setAboutRect({top: document.getElementById('about').getBoundingClientRect().top, height: document.getElementById('about').getBoundingClientRect().height});
     setExperienceRect({top: document.getElementById('experience').getBoundingClientRect().top, height: document.getElementById('experience').getBoundingClientRect().height});
     setServicesRect({top: document.getElementById('services').getBoundingClientRect().top, height: document.getElementById('services').getBoundingClientRect().height});
     setPortfolioRect({top: document.getElementById('portfolio').getBoundingClientRect().top, height: document.getElementById('portfolio').getBoundingClientRect().height});
-    //setTestimonialsRect({top: document.getElementById('testimonials').getBoundingClientRect().top, height: document.getElementById('testimonials').getBoundingClientRect().height});
     setContactRect({top: document.getElementById('contact').getBoundingClientRect().top, height: document.getElementById('contact').getBoundingClientRect().height});
   }
 
 
-  /** początkowe ustawnienie wymiarów */
   useLayoutEffect(() => {
     setPos();
   }, []);
 
 
-  /** nasłuciwanie scrollowania */
   useEffect(() => {
     const onScroll = () => {
       handleScroll();
@@ -87,7 +79,6 @@ const Nav = () => {
   }, [window.scrollY]);
 
 
-  /** nasłuchiwanie zmiany wymiarów strony */
   useEffect(() => {
     const handleResize = () => {
       setPos();
@@ -103,32 +94,26 @@ const Nav = () => {
     <nav>
 
       <a href="#" 
-        // onClick={() => {highlight('#')}} 
         className={checkIsActive('#')}
       ><AiOutlineHome/></a>
 
       <a href="#about" 
-        // onClick={() => {highlight('#about')}} 
         className={checkIsActive('#about')}
       ><AiOutlineUser/></a>
 
       <a href="#experience" 
-        // onClick={() => {highlight('#experience')}} 
         className={checkIsActive('#experience')}
       ><AiOutlineStar/></a>
 
       <a href="#services" 
-        // onClick={() => {highlight('#services')}} 
         className={checkIsActive('#services')}
       ><RiServiceLine/></a>
 
       <a href="#portfolio" 
-        // onClick={() => {highlight('#portfolio')}} 
         className={checkIsActive('#portfolio')}
       ><AiOutlineFundProjectionScreen/></a>
 
       <a href="#contact" 
-        // onClick={() => {highlight('#contact')}} 
         className={checkIsActive('#contact')}
       ><BsChatQuote/></a>
 

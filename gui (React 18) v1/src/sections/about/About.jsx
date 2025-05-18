@@ -2,8 +2,11 @@ import React from 'react';
 import './about.css';
 import {FaAward} from 'react-icons/fa';
 import {VscFolderLibrary} from 'react-icons/vsc';
+import {CgCodeSlash} from 'react-icons/cg';
+import {FaAngular, FaReact} from 'react-icons/fa';
+import {DiCss3} from 'react-icons/di';
+import {AiFillHtml5} from 'react-icons/ai';
 
-/** O mnie */
 
 const About = () => {
 
@@ -37,23 +40,23 @@ const About = () => {
           <article className='about__card'>
             <FaAward className='about__icon'/>
             <h5>Doświadczenie</h5>
-            <small>{calculateMonthsFromJuly2022()} pracy</small>
+            <small>{calculateMonthsFromJuly2022()} doświadczenia na stanowisku frontend developera</small>
+          </article>
+
+          <article className='about__card'>
+            <CgCodeSlash className='about__icon'/>
+            <h5>Najczęściej używane technologie</h5>
+            <p><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></p>
           </article>
 
           <article className='about__card'>
             <VscFolderLibrary className='about__icon'/>
             <h5>Projekty</h5>
-            <small>wiele projektów komercyjnych</small>
+            <small>Wiele projektów komercyjnych oraz własnych</small>
           </article>
 
         </div>
 
-        <p>
-          Mam {calculateMonthsFromJuly2022()} doświadczenia w branży IT na stanowisku frontend developera. Pracuję w technologii Angular.
-          Poza pracą napisałem kilka projektów w technologii angular oraz React.
-        </p>
-
-        <a href="#contact" className='btn btn-primary'>Zadaj pytanie</a>
       </div>
 
     </section>

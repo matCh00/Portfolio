@@ -2,30 +2,29 @@ import React from 'react';
 import './services.css';
 import {BiCheck} from 'react-icons/bi';
 
-/** Usługi */
 
 const Services = () => {
 
   const services = [
-    {key: 'Implementacja GUI w technologii Angular', values: [
-      {key: 'Tworzenie aplikacji typu MPA'},
-      {key: 'Znajomość PrimeNg'},
-      {key: 'Znajomość Primeflex'},
-      {key: 'Znajomość RxJS'},
-      {key: 'Dobre praktyki programowania'},
+    {key: 'Implementacja GUI', values: [
+      {key: 'Najnowsze wersje Angular'},
+      {key: 'Starsze wersje Angular'},
+      {key: 'Najnowsze wersje React'},
+      {key: 'Najnowsze wersje Vue'},
+      {key: 'Znajomość PrimeFaces'},
+    ]},
+    {key: 'Dobre praktyki programowania', values: [
+      {key: 'Tworzenie czystego kodu'},
       {key: 'Dobre praktyki UI/UX'},
+      {key: 'Implementacja animacji'},
+      {key: 'Responsywność aplikacji'},
     ]},
-    {key: 'Implementacja GUI w technologii React', values: [
-      {key: 'Tworzenie aplikacji typu SPA'},
-      {key: 'Znajomość hooków'},
-      {key: 'Komponnty funkcyjne'},
-    ]},
-    {key: 'Implementacja GUI w technologii React Native', values: [
-      {key: 'Tworzenie aplikacji mobilnej'},
-      {key: 'Responsywność interfejsu'},
-      {key: 'Znajomość hooków'},
+    {key: 'Zarządzanie aplikacją', values: [
+      {key: 'Dobre praktyki Git'},
+      {key: 'Znajomość Docker'},
     ]}
   ]
+
   return (
     <section id='services'>
 
