@@ -4,7 +4,6 @@ import {MdOutlineEmail} from 'react-icons/md';
 import {RiMessengerLine} from 'react-icons/ri';
 import {BsLinkedin, BsGithub} from 'react-icons/bs';
 
-/** Kontakt */
 
 const Contact = () => {
   return (

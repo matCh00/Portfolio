@@ -1,14 +1,16 @@
-// sekcja "Portfolio"
-
 import React from 'react';
 import Card3 from '../../components/card-3/Card3';
 import './portfolio.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { pc1, pc2, mobile1, mobile2 } from '../../assets/Portfolio_v1';
+
 import { img1, img2, img3, img4, img5 } from '../../assets/GymApp';
-import { img1_18, img2_18, img3_18, img4_18, img5_18, img6_18, img7_18 } from '../../assets/JustTravel18';
-import { img1_10, img2_10, img3_10, img4_10, img5_10, img6_10, img7_10 } from '../../assets/JustTravel10';
+import { p1_1, p1_2, p1_3, p1_4 } from '../../assets/Portfolio_v1';
+import { jt1_18, jt2_18, jt3_18, jt4_18, jt5_18, jt6_18, jt7_18 } from '../../assets/JustTravel18';
+import { jt1_10, jt2_10, jt3_10, jt4_10, jt5_10, jt6_10, jt7_10 } from '../../assets/JustTravel10';
+import { mr1_19, mr2_19, mr3_19, mr4_19, mr5_19, mr6_19 } from '../../assets/MovieReviewer19';
+import { mr1_10, mr2_10, mr3_10, mr4_10, mr5_10, mr6_10 } from '../../assets/MovieReviewer10';
+
 
 const Portfolio = () => {
 
@@ -18,34 +20,44 @@ const Portfolio = () => {
     {
       titleHtml: '<div class="html-title"> <strong class="clr-secondary">JustTravel</strong> <p>Aplikacja do tworzenia podrózy</p> </div>',
       technology: 'Angular 18 + TypeScript',
-      href: 'https://github.com/matCh00/JustTravel-Angular18',
-      images: [img1_18, img2_18, img3_18, img4_18, img5_18, img6_18, img7_18],
+      images: [jt1_18, jt2_18, jt3_18, jt4_18, jt5_18, jt6_18, jt7_18],
       carouselClass: 'portfolio__carousel-desktop',
       desktop: false
     },
     {
       titleHtml: '<div class="html-title"> <strong class="clr-secondary">JustTravel</strong> <p>Aplikacja do tworzenia podrózy</p> </div>',
       technology: 'Angular 10 + TypeScript',
-      href: 'https://github.com/matCh00/JustTravel-Angular10',
-      images: [img1_10, img2_10, img3_10, img4_10, img5_10, img6_10, img7_10],
+      images: [jt1_10, jt2_10, jt3_10, jt4_10, jt5_10, jt6_10, jt7_10],
+      carouselClass: 'portfolio__carousel-desktop',
+      desktop: false
+    },
+    {
+      titleHtml: '<div class="html-title"> <strong class="clr-secondary">MovieReviewer</strong> <p>Aplikacja do oceniania filmów i seriali</p> </div>',
+      technology: 'Angular 19 + TypeScript',
+      images: [mr1_19, mr2_19, mr3_19, mr4_19, mr5_19, mr6_19],
+      carouselClass: 'portfolio__carousel-desktop',
+      desktop: false
+    },
+    {
+      titleHtml: '<div class="html-title"> <strong class="clr-secondary">MovieReviewer</strong> <p>Aplikacja do oceniania filmów i seriali</p> </div>',
+      technology: 'Angular 10 + TypeScript',
+      images: [mr1_10, mr2_10, mr3_10, mr4_10, mr5_10, mr6_10],
       carouselClass: 'portfolio__carousel-desktop',
       desktop: false
     },
     {
       titleHtml: '<div class="html-title"> <strong class="clr-secondary">GymApp</strong> <p>Aplikacja mobilna do zarządzania oraz monitorowania treningów</p> </div>',
-      technology: 'React Native + TypeScript + Firebase',
-      href: 'https://github.com/matCh00/GymApp',
+      technology: 'React Native + TypeScript',
       images: [img1, img2, img3, img4, img5],
       carouselClass: 'portfolio__carousel-mobile',
       desktop: false
     },
     {
-      titleHtml: '<div class="html-title"> <strong class="clr-secondary">Portfolio_v1</strong> <p>Responsywna strona internetowa</p> </div>',
-      technology: 'React + JavaScript + CSS',
-      href: 'https://github.com/matCh00/Portfolio',
-      images: [pc1, mobile1, pc2, mobile2],
-      carouselClass: 'portfolio__carousel-desktop',
-      desktop: true
+      titleHtml: '<div class="html-title"> <strong class="clr-secondary">Portfolio v1</strong> <p>Strona internetowa</p> </div>',
+      technology: 'React + JavaScript',
+      images: [p1_1, p1_2, p1_3, p1_4],
+      carouselClass: 'portfolio__carousel-mobile',
+      desktop: false
     },
   ]
   
@@ -73,7 +85,6 @@ const Portfolio = () => {
                   <div className='portfolio-header-content'>
                     <h3 dangerouslySetInnerHTML={{__html: project.titleHtml}}></h3>
                     <h4>{project.technology}</h4>
-                    <a href={project.href} target={'_blank'} className='btn'> GitHub </a>
                   </div>
                 } 
               >

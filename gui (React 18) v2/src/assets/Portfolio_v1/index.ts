@@ -1,11 +1,11 @@
-import pc1 from './pc1.png';
-import pc2 from './pc2.png';
-import mobile1 from './mobile1.png';
-import mobile2 from './mobile2.png';
+import p1_1 from './p1-1.PNG';
+import p1_2 from './p1-2.PNG';
+import p1_3 from './p1-3.PNG';
+import p1_4 from './p1-4.PNG';
 
 export {
-  pc1,
-  pc2,
-  mobile1,
-  mobile2,
+  p1_1,
+  p1_2,
+  p1_3,
+  p1_4,
 };

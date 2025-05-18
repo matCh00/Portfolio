@@ -1,7 +1,6 @@
 import React from 'react';
 import './card3.css';
 
-/** animowana karta */
 
 type Props = {
   width?: string,

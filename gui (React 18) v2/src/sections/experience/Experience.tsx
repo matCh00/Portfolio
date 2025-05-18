@@ -1,31 +1,29 @@
-// sekcja "Doświadczenie"
-
 import React from 'react';
 import Card2 from '../../components/card-2/Card2';
 import './experience.css';
-import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
 import {SlGraduation} from 'react-icons/sl';
+
 
 const Experience = () => {
 
   const experienceFront = [
-    {key: 'Angular', value: 5},
-    {key: 'TypeScript', value: 5},
-    {key: 'PrimeFaces', value: 5},
-    {key: 'React', value: 5},
-    {key: 'JavaScript', value: 4},
-    {key: 'HTML', value: 4},
-    {key: 'CSS/SCSS', value: 4},
+    {key: 'Angular', value: ''},
+    {key: 'TypeScript', value: ''},
+    {key: 'React', value: ''},
+    {key: 'Vue', value: ''},
+    {key: 'HTML', value: ''},
+    {key: 'CSS/SCSS', value: ''},
+    {key: 'PrimeFaces', value: ''},
   ]
 
   const experienceBackend = [
-    {key: 'Python', value: 3},
-    {key: 'Firebase', value: 4},
-    {key: 'Java', value: 2},
+    {key: 'Python', value: ''},
+    {key: 'Firebase', value: ''},
   ]
 
-  const experienceMobile = [
-    {key: 'React Native', value: 5},
+  const experienceOthers = [
+    {key: 'React Native', value: ''},
+    {key: 'Docker', value: ''},
   ]
 
   return (
@@ -47,8 +45,6 @@ const Experience = () => {
                 return (
                   <p key={e.key}>
                     <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
-                    {/**e.value === 5 ? <FiveStars/> : e.value === 4 ? <FourStars/> : e.value === 3 ?
-                    <ThreeStars/> : e.value === 2 ? <TwoStars/> : <OneStars/>*/}
                   </p>
                 )
               })}
@@ -61,22 +57,18 @@ const Experience = () => {
                 return (
                   <p key={e.key}>
                     <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
-                    {/**e.value === 5 ? <FiveStars/> : e.value === 4 ? <FourStars/> : e.value === 3 ?
-                    <ThreeStars/> : e.value === 2 ? <TwoStars/> : <OneStars/>*/}
                   </p>
                 )
               })}
             </div>          
           </Card2>
           
-          <Card2 header={'Aplikacje mobilne'} lightHeader={false}>
+          <Card2 header={'Inne'} lightHeader={false}>
             <div className="experience-content-card">
-              {experienceMobile.map(e => {
+              {experienceOthers.map(e => {
                 return (
                   <p key={e.key}>
                     <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
-                    {/**e.value === 5 ? <FiveStars/> : e.value === 4 ? <FourStars/> : e.value === 3 ?
-                    <ThreeStars/> : e.value === 2 ? <TwoStars/> : <OneStars/>*/}
                   </p>
                 )
               })}
@@ -92,33 +84,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
-const FiveStars = () => {
-  return (
-    <span className='clr-primary-dark' style={{display: 'flex'}}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></span>
-  )
-}
-
-const FourStars = () => {
-  return (
-    <span className='clr-primary-dark' style={{display: 'flex'}}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/></span>
-  )
-}
-
-const ThreeStars = () => {
-  return (
-    <span className='clr-primary-dark' style={{display: 'flex'}}><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/></span>
-  )
-}
-
-const TwoStars = () => {
-  return (
-    <span className='clr-primary-dark' style={{display: 'flex'}}><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></span>
-  )
-}
-
-const OneStars = () => {
-  return (
-    <span className='clr-primary-dark' style={{display: 'flex'}}><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></span>
-  )
-}

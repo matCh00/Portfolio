@@ -1,7 +1,6 @@
 import React from 'react';
 import './card1.css';
 
-/** animowana karta */
 
 type Props = {
   width?: string,
@@ -19,7 +18,9 @@ const Card1 = ({
 
   return (
     <div  className={`card1 ${highlight ? "highlight" : ""}`} style={{width: width, padding: padding}}>
+
       {children}
+      
     </div>
   )
 };
