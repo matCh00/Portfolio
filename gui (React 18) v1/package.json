@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://match00.github.io/Portfolio/v1",
+  "homepage": "https://match00.github.io/Portfolio/gui%20(React18)%20v1",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "node ../copy-build.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

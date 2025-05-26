@@ -7,6 +7,7 @@ import Hero from './sections/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import Portfolio from './sections/portfolio/Portfolio';
 import Services from './sections/services/Services';
+import {HashRouter as Router} from 'react-router-dom'
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
   }, [])
 
   return (
-    <main>
+    <Router basename={process.env.PUBLIC_URL}>
 
       <Navbar />
 
@@ -40,7 +41,7 @@ function App() {
 
       <Footer />
 
-    </main>
+    </Router>
   );
 }
 
