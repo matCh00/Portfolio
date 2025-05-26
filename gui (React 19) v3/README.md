@@ -1,6 +1,6 @@
-# Portfolio v1
+# Portfolio v3
 
-## React + JavaScript web application
+## React + TypScript web application
 
 run application:   
 * `npm install --legacy-peer-deps`     

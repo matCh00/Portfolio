@@ -9,6 +9,7 @@ run application:
 deploy application:   
 * `npm run predeploy`  
 * `npm run deploy`  
+* `git push`  
 
 ### Preview
 ![preview](public/preview.PNG)
