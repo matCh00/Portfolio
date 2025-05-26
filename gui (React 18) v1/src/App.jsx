@@ -7,12 +7,11 @@ import Portfolio from './sections/portfolio/Portfolio';
 import Contact from './sections/contact/Contact';
 import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
-import {HashRouter as Router} from 'react-router-dom'
 
 const App = () => {
 
   return (
-    <Router basename={`${process.env.PUBLIC_URL}/`}>
+    <>
       <Nav />
       <Hero />
       <About />
@@ -21,7 +20,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </Router>
+    </>
   )
 }
 
