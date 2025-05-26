@@ -12,12 +12,13 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^7.6.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "node ../copy-build.js",
+    "deploy": "node ../copy-build.js \"gui (React18) v1\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
-    "@types/react-pdf": "^6.2.0"
+    "@types/react-pdf": "^6.2.0",
+    "fs-extra": "^11.3.0"
   }
 }
