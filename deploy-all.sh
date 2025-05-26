@@ -1,36 +1,46 @@
 #!/bin/bash
 
-# Lista projektów z oryginalnymi nazwami
+# RUN:  bash -x ./deploy-all.sh
+
+# Lista projektów
 projects=(
-  "gui (React18) v1"
-  "gui (React18) v2"
+  "gui (React 18) v1"
+  "gui (React 18) v2"
 )
 
-# Buduj i kopiuj każdy projekt
 for project in "${projects[@]}"; do
-  echo "🔨 Budowanie $project..."
-  cd "$project"
-  npm run deploy
+  echo "🔨 Processing: '$project'..."
+  
+  # Wejdź do folderu projektu
+  cd "$project" || { echo "❌ Folder nie istnieje: $project"; exit 1; }
+  
+  # Zbuduj projekt
+  echo "⌛ Budowanie..."
+  if ! npm run build; then
+    echo "❌ Błąd budowania $project"
+    exit 1
+  fi
+  
+  # Skopiuj build
+  echo "📁 Kopiowanie..."
+  node ../copy-build.js "$project"
+  
   cd ..
 done
 
-# Generuj stronę główną
-echo "📄 Tworzę index.html..."
+# Strona główna
+echo "📄 Generating index.html..."
 cat <<EOF > docs/index.html
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My Portfolio</title>
-</head>
 <body>
-    <h1>Projekty:</h1>
-    <ul>
-        <li><a href="./gui%20(React18)%20v1/">GUI v1</a></li>
-        <li><a href="./gui%20(React18)%20v2/">GUI v2</a></li>
-    </ul>
+  <h1>Projekty:</h1>
+  <ul>
+    <li><a href="./gui (React18) v1/">v1</a></li>
+    <li><a href="./gui (React18) v2/">v2</a></li>
+  </ul>
 </body>
 </html>
 EOF
 
-echo "✅ Gotowe! Wypchnij zmiany na GitHub:"
-echo "git add docs && git commit -m 'Aktualizacja projektów' && git push"
+echo "✅ Done! Run: git add docs && git commit -m 'Update' && git push"
