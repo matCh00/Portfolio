@@ -12,7 +12,7 @@ import {HashRouter as Router} from 'react-router-dom'
 const App = () => {
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <Nav />
       <Hero />
       <About />
