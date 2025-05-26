@@ -36,8 +36,8 @@ cat <<EOF > docs/index.html
 <body>
   <h1>Projekty:</h1>
   <ul>
-    <li><a href="./gui (React18) v1/">v1</a></li>
-    <li><a href="./gui (React18) v2/">v2</a></li>
+    <li><a href="./v1/">v1</a></li>
+    <li><a href="./v2/">v2</a></li>
   </ul>
 </body>
 </html>
