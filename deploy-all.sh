@@ -23,7 +23,7 @@ for project in "${projects[@]}"; do
   
   # Skopiuj build
   echo "📁 Kopiowanie..."
-  node ../copy-build.js "$project"
+  npm run deploy
   
   cd ..
 done
