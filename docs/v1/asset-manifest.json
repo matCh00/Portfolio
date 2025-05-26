@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio/v1/static/css/main.b74215b4.css",
+    "main.js": "/Portfolio/v1/static/js/main.c8db7816.js",
+    "static/media/preview.PNG": "/Portfolio/v1/static/media/preview.bb20be9afe41d7aa4086.PNG",
+    "static/media/instruction-2.PNG": "/Portfolio/v1/static/media/instruction-2.4c7566340fc5d3f96402.PNG",
+    "static/media/instruction-1.PNG": "/Portfolio/v1/static/media/instruction-1.d8fab1a9e4f0e073a494.PNG",
+    "static/media/me2.jpg": "/Portfolio/v1/static/media/me2.e35539a7bcc7938b7be9.jpg",
+    "static/media/9.jpg": "/Portfolio/v1/static/media/9.1d9b107b485b8c4018d6.jpg",
+    "static/media/instruction-4.PNG": "/Portfolio/v1/static/media/instruction-4.b851517d8a9a61590259.PNG",
+    "static/media/3.jpg": "/Portfolio/v1/static/media/3.65521af3aff96e419184.jpg",
+    "static/media/7.jpg": "/Portfolio/v1/static/media/7.ff38ea27616607db975c.jpg",
+    "static/media/5.jpg": "/Portfolio/v1/static/media/5.676bad7e3fb15e8a1d5c.jpg",
+    "static/media/2.jpg": "/Portfolio/v1/static/media/2.aeb4125b036d3bcd41f9.jpg",
+    "static/media/6.jpg": "/Portfolio/v1/static/media/6.c52ee4a10260bec38e82.jpg",
+    "static/media/8.jpg": "/Portfolio/v1/static/media/8.b61d31d3ef24175f98c4.jpg",
+    "static/media/1.jpg": "/Portfolio/v1/static/media/1.564adcd808a393af6ecd.jpg",
+    "static/media/cv.pdf": "/Portfolio/v1/static/media/cv.a6907659ea95ac5d8a34.pdf",
+    "static/media/instruction-6.PNG": "/Portfolio/v1/static/media/instruction-6.fa4a0bd52fac706d4cbb.PNG",
+    "static/media/instruction-5.PNG": "/Portfolio/v1/static/media/instruction-5.74b8a24b92238bb3819c.PNG",
+    "static/media/4.jpg": "/Portfolio/v1/static/media/4.d65a9d81e621d9cf1987.jpg",
+    "static/media/instruction-3.PNG": "/Portfolio/v1/static/media/instruction-3.e5fd88c44099bb022d84.PNG",
+    "index.html": "/Portfolio/v1/index.html",
+    "main.b74215b4.css.map": "/Portfolio/v1/static/css/main.b74215b4.css.map",
+    "main.c8db7816.js.map": "/Portfolio/v1/static/js/main.c8db7816.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74215b4.css",
+    "static/js/main.c8db7816.js"
+  ]
+}
