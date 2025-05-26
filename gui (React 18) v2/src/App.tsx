@@ -29,18 +29,14 @@ function App() {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-
       <Navbar />
-
       <Hero />
       <About />
       <Experience />
       <Portfolio />
       <Services />
       <Contact />
-
       <Footer />
-
     </Router>
   );
 }
