@@ -48,7 +48,6 @@
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .about__cards {
     width: 75%;
@@ -56,8 +55,6 @@
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   .about__cards {
     width: 90%;

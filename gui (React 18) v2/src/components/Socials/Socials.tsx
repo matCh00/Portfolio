@@ -4,6 +4,7 @@ import {BsLinkedin, BsGithub} from 'react-icons/bs';
 
 
 const Socials = () => {
+  
   return (
     <div className='socials'>
 

@@ -32,7 +32,6 @@
 }
 
 
-/* deklaracje */
 .card2:nth-child(1) {
   grid-area: front;
 }
@@ -44,7 +43,6 @@
 }
 
 
-/* szeroki monitor */
 @media screen and (width > 82rem) {
   .experience-content {
     grid-template-areas:
@@ -52,7 +50,6 @@
   }
 }
 
-/* zwykły monitor */
 @media screen and (width <= 82rem) {
   .experience-content {
     grid-template-areas:
@@ -61,7 +58,6 @@
   }
 }
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .experience-content {
     grid-template-areas:
@@ -70,7 +66,6 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .experience-content {
     grid-template-areas:

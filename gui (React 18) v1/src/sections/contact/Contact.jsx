@@ -6,6 +6,7 @@ import {BsLinkedin, BsGithub} from 'react-icons/bs';
 
 
 const Contact = () => {
+  
   return (
     <section id='contact'>
 

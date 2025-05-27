@@ -54,15 +54,12 @@ footer a {
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .footer__socials {
     margin-bottom: 1rem;
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   .permalinks {
     flex-direction: column;
@@ -73,8 +70,6 @@ footer a {
   }
 }
 
-
-/* Portrait */
 @media screen and (orientation: portrait) {
   .footer__copyright {
     padding-bottom: 4rem;

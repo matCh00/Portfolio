@@ -40,7 +40,6 @@ header {
 }
 
 
-/* portret */
 .me {
   position: relative;
   display: flex;
@@ -49,7 +48,6 @@ header {
 }
 
 
-/* orb wkoło portretu */
 .me::after {
   position: absolute;
   z-index: -1;
@@ -81,7 +79,6 @@ header {
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .socials {
     display: none !important;
@@ -91,16 +88,12 @@ header {
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   header {
     padding: 3rem 0 2rem 0;
   }
 }
 
-
-/* Portrait */
 @media screen and (orientation: portrait) {
   header {
     padding-top: 5rem;
@@ -118,8 +111,6 @@ header {
   }
 }
 
-
-/* Landscape */
 @media screen and (orientation: landscape) {
   .header__container {
     display: grid;

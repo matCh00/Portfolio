@@ -1,7 +1,7 @@
 #hero {
   background: linear-gradient(45deg, var(--color-secondary), var(--color-neutral));
 
-  font-size: 1.1em;  /** powiększona czcionka */
+  font-size: 1.1em;
 }
 
 
@@ -23,26 +23,23 @@
 }
 
 
-/* szeroki monitor */
 @media screen and (width > 82rem) {
   #hero {
-    height: calc(100vh - 5rem);  /* 100vh - wysokość headera */
+    height: calc(100vh - 5rem);
   }
 }
 
-/* zwykły monitor */
 @media screen and (width <= 82rem) {
   #hero {
-    height: calc(100vh - 5rem);  /* 100vh - wysokość headera */
+    height: calc(100vh - 5rem);
   }
 }
 
-/* tablety */
 @media screen and (width <= 62rem) {
   #hero {
-    transition: height 200ms ease;  /* animacja */
+    transition: height 200ms ease;
     height: 100vh;
-    height: 100dvh;  /* full wysokość bez górnego paska na mobilkach */
+    height: 100dvh;
   }
   .container-hero {
     flex-direction: column;
@@ -51,13 +48,12 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   #hero {
-    transition: height 200ms ease;  /* animacja */
+    transition: height 200ms ease;
     height: 100vh;
-    height: 100dvh;  /* full wysokość bez górnego paska na mobilkach */
-    padding-bottom: 5rem;  /* bardziej sciśnięty content */
+    height: 100dvh;
+    padding-bottom: 5rem;
   }
   .container-hero {
     flex-direction: column;

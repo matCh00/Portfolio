@@ -61,34 +61,30 @@
 }
 
 
-/* szeroki monitor */
 @media screen and (width > 82rem) {
   #portfolio {
-    margin-block: 6rem;  /* powiększona przerwa pomiedzy sekcjami */
+    margin-block: 6rem;
   }
 }
 
-/* zwykły monitor */
 @media screen and (width <= 82rem) {
   #portfolio {
-    margin-block: 5rem;  /* powiększona przerwa pomiedzy sekcjami */
+    margin-block: 5rem;
   }
 }
 
-/* tablety */
 @media screen and (width <= 62rem) {
   #portfolio {
-    margin-block: 4rem;  /* powiększona przerwa pomiedzy sekcjami */
+    margin-block: 4rem;
   }
   .portfolio-content {
     gap: 2rem;
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   #portfolio {
-    margin-block: 3rem;  /* powiększona przerwa pomiedzy sekcjami */
+    margin-block: 3rem;
   }
   .portfolio-content {
     gap: 1.5rem;

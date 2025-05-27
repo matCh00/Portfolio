@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.css';
 import Actions from '../../components/actions/Actions';
-import ME from '../../assets/personal/me2.jpg';
+import ME from '@portfolio/shared/assets/personal/me2.jpg';
 import Socials from '../../components/socials/Socials';
 
 

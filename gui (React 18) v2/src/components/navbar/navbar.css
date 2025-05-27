@@ -11,7 +11,7 @@
   background: var(--color-neutral-darkest);
   color: var(--color-secondary);
 
-  height: 5rem;  /* wysokość */
+  height: 5rem;
 }
 
 .desktop a {
@@ -54,7 +54,6 @@
 }
 
 
-/* szeroki monitor */
 @media screen and (width > 82rem) {
   .desktop {
     display: flex;
@@ -64,7 +63,6 @@
   }
 }
 
-/* zwykły monitor */
 @media screen and (width <= 82rem) {
   .desktop {
     display: flex;
@@ -74,24 +72,22 @@
   }
 }
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .desktop {
     display: none;
   }
   .mobile {
     display: flex;
-    bottom: 5rem;  /* odległość od dołu - wysokość footera */
+    bottom: 5rem;
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .desktop {
     display: none;
   }
   .mobile {
     display: flex;
-    bottom: 3rem;  /* odległość od dołu - wysokość footera */
+    bottom: 3rem;
   }
 }

@@ -2,29 +2,10 @@ import React from 'react';
 import Card2 from '../../components/card-2/Card2';
 import './experience.css';
 import {SlGraduation} from 'react-icons/sl';
+import {experienceFront, experienceBackend, experienceOthers} from '@portfolio/shared/sections/experience'
 
 
 const Experience = () => {
-
-  const experienceFront = [
-    {key: 'Angular', value: ''},
-    {key: 'TypeScript', value: ''},
-    {key: 'React', value: ''},
-    {key: 'Vue', value: ''},
-    {key: 'HTML', value: ''},
-    {key: 'CSS/SCSS', value: ''},
-    {key: 'PrimeFaces', value: ''},
-  ]
-
-  const experienceBackend = [
-    {key: 'Python', value: ''},
-    {key: 'Firebase', value: ''},
-  ]
-
-  const experienceOthers = [
-    {key: 'React Native', value: ''},
-    {key: 'Docker', value: ''},
-  ]
 
   return (
     <section id='experience' className='hidden'>

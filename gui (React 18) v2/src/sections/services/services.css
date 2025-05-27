@@ -29,7 +29,6 @@
 }
 
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .services-content {
     flex-direction: column;
@@ -37,7 +36,6 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .services-content {
     flex-direction: column;

@@ -6,27 +6,10 @@ import {CgCodeSlash} from 'react-icons/cg';
 import {FaAngular, FaReact} from 'react-icons/fa';
 import {DiCss3} from 'react-icons/di';
 import {AiFillHtml5} from 'react-icons/ai';
+import calculatYearsMonth from '@portfolio/shared/sections/about';
 
 
 const About = () => {
-
-  function calculateMonthsFromJuly2022() {
-    const startDate = new Date(2022, 6, 1);
-    const currentDate = new Date();
-
-    let years = currentDate.getFullYear() - startDate.getFullYear();
-    let months = currentDate.getMonth() - startDate.getMonth();
-
-    if (months < 0) {
-      years -= 1;
-      months += 12;
-    }
-
-    if (months === 0) {
-      return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}`;
-    }
-    return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}` + ` i ${months} miesięcy`;
-  }
 
   return (
     <section id='about'>
@@ -40,7 +23,7 @@ const About = () => {
           <article className='about__card'>
             <FaAward className='about__icon'/>
             <h5>Doświadczenie</h5>
-            <small>{calculateMonthsFromJuly2022()} doświadczenia na stanowisku frontend developera</small>
+            <small>{calculatYearsMonth()} doświadczenia na stanowisku frontend developera</small>
           </article>
 
           <article className='about__card'>

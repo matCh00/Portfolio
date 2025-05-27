@@ -5,6 +5,7 @@ import {FaFigma} from 'react-icons/fa';
 
 
 const Socials = () => {
+  
   return (
     <div className='socials'>
 

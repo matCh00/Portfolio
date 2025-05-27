@@ -19,7 +19,6 @@
 }
 
 
-/* główne */
 *,
 *::before,
 *::after {
@@ -136,7 +135,6 @@ input, textarea, button, select, a {
     padding: 2em 0 12em 0;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .container {

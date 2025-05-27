@@ -1,9 +1,10 @@
 import React from 'react';
 import './actions.css';
-const CV = require('../../assets/personal/cv.pdf');
+const CV = require('@portfolio/shared/assets/personal/cv.pdf');
 
 
 const Actions = () => {
+  
   return (
     <div className='actions'>
 

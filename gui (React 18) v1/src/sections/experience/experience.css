@@ -43,7 +43,6 @@
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
@@ -61,8 +60,6 @@
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   .experience__container {
     gap: 1rem;

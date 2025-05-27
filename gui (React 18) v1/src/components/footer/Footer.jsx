@@ -4,6 +4,7 @@ import {FaFacebook} from 'react-icons/fa'
 
 
 const Footer = () => {
+  
   return (
     <footer>
 

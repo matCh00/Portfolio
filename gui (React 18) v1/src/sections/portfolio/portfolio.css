@@ -85,6 +85,7 @@
 }
 
 .portfolio__carousel-desktop {
+  margin-top: 2rem;
   width: 40rem;
 }
 
@@ -104,7 +105,6 @@
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .portfolio__item {
     transform:
@@ -131,8 +131,6 @@
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   .portfolio__item {
     display: flex;
