@@ -43,9 +43,10 @@ export const projects = [
   },
   {
     title: 'Portfolio v1',
-    subtitle: 'Strona portfolio',
+    subtitle: 'Strona portfolio typu Single Page Application',
     technology: 'React + JavaScript',
     images: [p1_1, p1_2, p1_3, p1_4],
-    desktop: false
+    desktop: false,
+    link: 'https://match00.github.io/Portfolio/v1/'
   },
 ]

@@ -4,6 +4,8 @@ import './portfolio.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from 'react-responsive-carousel';
 import {projects} from '@portfolio/shared/sections/portfolio'
+import {HiOutlineExternalLink} from "react-icons/hi";
+
 
 
 const Portfolio = () => {
@@ -36,7 +38,12 @@ const Portfolio = () => {
                   <div className='portfolio-header-content'>
                     <h3>
                       <div className="html-title"> 
-                        <strong className="clr-secondary">{project.title}</strong> 
+                        <strong className="clr-secondary">
+                          {project.title}
+                          {project?.link && 
+                            <a href={project?.link} target='_blank' className='link'><HiOutlineExternalLink/></a>
+                          }
+                        </strong> 
                         <p>{project.subtitle}</p> 
                       </div>
                     </h3>
