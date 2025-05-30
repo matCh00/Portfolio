@@ -38,7 +38,7 @@ const Portfolio = () => {
                   <div className='portfolio-header-content'>
                     <h3>
                       <div className="html-title"> 
-                        <strong className="clr-secondary">
+                        <strong className="color-secondary">
                           {project.title}
                           {project?.link && 
                             <a href={project?.link} target='_blank' className='link'><HiOutlineExternalLink/></a>

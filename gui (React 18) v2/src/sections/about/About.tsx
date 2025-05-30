@@ -25,14 +25,14 @@ const About = () => {
 
           <Card1>
             <div className="about-content-card">
-              <BiTimeFive className='clr-secondary'/>
+              <BiTimeFive className='color-secondary'/>
               <p>{calculatYearsMonth()} doświadczenia na stanowisku frontend developera</p>
             </div>
           </Card1>
 
           <Card1>
             <div className="about-content-card">
-              <CgCodeSlash className='clr-secondary'/>
+              <CgCodeSlash className='color-secondary'/>
                 <p>
                   Najczęściej używane technologie <br/>
                   <span style={{fontSize: '1.5rem'}}><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></span>
@@ -42,7 +42,7 @@ const About = () => {
 
           <Card1>
             <div className="about-content-card">
-              <AiOutlineFundProjectionScreen className='clr-secondary'/>
+              <AiOutlineFundProjectionScreen className='color-secondary'/>
               <p>Wiele projektów komercyjnych oraz własnych</p>
             </div>
           </Card1>

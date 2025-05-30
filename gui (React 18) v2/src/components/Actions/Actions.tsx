@@ -8,7 +8,7 @@ const Actions = () => {
   return (
     <div className='actions'>
 
-      <a href={CV} download='CV Mateusz Chalik' className='btn'>Pobierz CV</a>
+      <a href={CV} download='CV Mateusz Chalik' className='button'>Pobierz CV</a>
       
     </div>
   )

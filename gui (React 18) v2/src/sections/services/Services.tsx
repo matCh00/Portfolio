@@ -27,7 +27,7 @@ const Services = () => {
                   {s.values.map(v => {
                     return (
                       <p key={v.key}>
-                        <AiOutlineCheck className='clr-secondary'/> {v.key}
+                        <AiOutlineCheck className='color-secondary'/> {v.key}
                       </p>
                     )
                   })}

@@ -1,54 +1,4 @@
-/* zmienne: https://colorhunt.co/palettes/dark */
-:root {
-  --color-neutral: hsl(255, 55%, 56%);
-  --color-primary: hsl(0, 0%, 93%);
-  --color-secondary: hsl(183, 100%, 35%);
-  
-  --color-neutral-dark: hsl(255, 55%, 26%);
-  --color-neutral-darker: hsl(255, 55%, 16%);
-  --color-neutral-darkest: hsl(246, 100%, 5%);
-  --color-primary-dark: hsl(0, 0%, 73%);
-  
-  --color-blur: rgba(48, 30, 103, 0.2);
-  --color-card: rgba(48, 30, 103, 0.5);
-  
-  --ff: "Lato", sans-serif;
-  --fw: 500;
-}
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline-color: transparent;
-  text-decoration: none;
-  list-style: none;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-body {
-  font-family: var(--ff);
-  font-weight: var(--fw);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.7;
-
-  background: var(--color-neutral-darkest);
-  color: var(--color-primary);
-}
+@import './root-styles.css';
 
 
 input, textarea, button, select, a {
@@ -56,22 +6,22 @@ input, textarea, button, select, a {
 }
 
 
-.bg-neutral {
+.background-neutral {
   background: var(--color-neutral-dark);
 }
-.bg-primary {
+.background-primary {
   background: var(--color-primary);
 }
-.clr-neutral {
+.color-neutral {
   color: var(--color-neutral-dark);
 }
-.clr-primary {
+.color-primary {
   color: var(--color-primary);
 }
-.clr-primary-dark {
+.color-primary-dark {
   color: var(--color-primary-dark);
 }
-.clr-secondary {
+.color-secondary {
   color: var(--color-secondary);
 }
 
@@ -182,7 +132,7 @@ a:hover {
 }
 
 
-.btn {
+.button {
   color: var(--color-primary);
   background: var(--color-neutral-dark);
   border: 1px solid var(--color-neutral-dark);
@@ -195,12 +145,12 @@ a:hover {
   transition: background-color 400ms ease;
 }
 
-.btn:hover {
+.button:hover {
   color: var(--color-neutral-dark);
   background: var(--color-primary);
 }
 
-.btn-primary {
+.button-primary {
   color: var(--color-neutral-dark);
   background: var(--color-secondary);
 }

@@ -25,7 +25,7 @@ const Experience = () => {
               {experienceFront.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}
@@ -37,7 +37,7 @@ const Experience = () => {
               {experienceBackend.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}
@@ -49,7 +49,7 @@ const Experience = () => {
               {experienceOthers.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}
