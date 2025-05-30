@@ -12,16 +12,16 @@ const Experience = () => {
       <h5>Co potrafię</h5>
       <h2>Doświadczenie</h2>
 
-      <div className="container experience__container">
+      <div className="container experience-container">
 
-        <div className="experience__frontend">
+        <div className="experience-frontend">
           <h3>Frontend</h3>
-          <div className="experience__content">
+          <div className="experience-content">
 
             {experienceFront.map(e => {
               return(
-                <article key={e.key} className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon'/>
+                <article key={e.key} className='experience-details'>
+                  <BsPatchCheckFill className='experience-details-icon'/>
                   <div>
                     <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>
@@ -32,14 +32,14 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__backend">
+        <div className="experience-backend">
           <h3>Backend</h3>
-          <div className="experience__content">
+          <div className="experience-content">
 
             {experienceBackend.map(e => {
               return(
-                <article key={e.key} className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon'/>
+                <article key={e.key} className='experience-details'>
+                  <BsPatchCheckFill className='experience-details-icon'/>
                   <div>
                     <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>
@@ -50,14 +50,14 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__mobile">
+        <div className="experience-mobile">
           <h3>Inne</h3>
-          <div className="experience__content">
+          <div className="experience-content">
 
             {experienceOthers.map(e => {
               return(
-                <article key={e.key} className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon'/>
+                <article key={e.key} className='experience-details'>
+                  <BsPatchCheckFill className='experience-details-icon'/>
                   <div>
                     <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>

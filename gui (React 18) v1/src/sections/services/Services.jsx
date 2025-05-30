@@ -12,20 +12,20 @@ const Services = () => {
       <h5>Co oferuję</h5>
       <h2>Usługi</h2>
 
-      <div className="container services__container">
+      <div className="container services-container">
 
         {services.map(s => {
           return (
             <article className="service" key={s.key}>
-              <div className="service__head">
+              <div className="service-head">
                 <h3>{s.key}</h3>
               </div>
 
-              <ul className="service__list">
+              <ul className="service-list">
                 {s.values.map(v => {
                   return (
                     <li key={v.key}>
-                      <BiCheck className='service__list-icon' />
+                      <BiCheck className='service-list-icon' />
                       <p>{v.key}</p>
                     </li>
                   )

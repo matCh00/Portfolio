@@ -8,13 +8,13 @@ import Socials from '../../components/socials/Socials';
 const Header = () => {
   return (
     <header id='header'>
-      <div className="container header__container">
+      <div className="container header-container">
 
         <div className="me">
-          <img src={ME} alt="me" className='me__img'/>
+          <img src={ME} alt="me" className='me-img'/>
         </div>
 
-        <div className='header__content'>
+        <div className='header-content'>
           <h4 className="text-light">Cześć! Nazywam się</h4>
           <h1>Mateusz</h1>
           <h4>Jestem frontend developerem</h4>

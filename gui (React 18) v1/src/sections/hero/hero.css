@@ -24,18 +24,18 @@ header {
   overflow: hidden;
 }
 
-.header__container {
+.header-container {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
 }
 
-.header__content {
+.header-content {
   position: relative;
   margin-top: 15vh;
 }
 
-.header__content h4 {
+.header-content h4 {
   color: var(--color-primary);
 }
 
@@ -68,13 +68,13 @@ header {
   animation: spin 2.5s linear infinite;
 }
 
-.me__img {
+.me-img {
   border-radius: 1.5rem;
   transform: rotate(-3deg);
   transition: var(--transition);
   overflow: hidden;
 }
-.me__img:hover {
+.me-img:hover {
   transform: rotate(0);
 }
 
@@ -83,7 +83,7 @@ header {
   .socials {
     display: none !important;
   }
-  .header__content {
+  .header-content {
     margin-top: 5vh;
   }
 }
@@ -98,7 +98,7 @@ header {
   header {
     padding-top: 5rem;
   }
-  .header__container {
+  .header-container {
     display: block;
   }
   .me {
@@ -112,7 +112,7 @@ header {
 }
 
 @media screen and (orientation: landscape) {
-  .header__container {
+  .header-container {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 3rem;

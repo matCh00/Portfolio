@@ -15,14 +15,14 @@ const Portfolio = () => {
       <h5>Moje projekty</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
+      <div className="container portfolio-container">
 
         {projects.filter(p => portfolioTitles.includes(p.title+'')).map(project => {
           return (
 
-            <article key={project.title} className={project.desktop ? 'portfolio__item portfolio__item-desktop' : 'portfolio__item'}>
+            <article key={project.title} className={project.desktop ? 'portfolio-item portfolio-item-desktop' : 'portfolio-item'}>
 
-              <div className="portfolio__description">
+              <div className="portfolio-description">
                 <h3>
                   <strong>{project.title}</strong> 
                   <br/>
@@ -33,7 +33,7 @@ const Portfolio = () => {
 
               <div className="carousel">
                 <Carousel 
-                  className={project.desktop ? 'portfolio__carousel-desktop' : 'portfolio__carousel-mobile'}
+                  className={project.desktop ? 'portfolio-carousel-desktop' : 'portfolio-carousel-mobile'}
                   showStatus={false} 
                   showThumbs={false} 
                   autoPlay={true} 
@@ -46,8 +46,8 @@ const Portfolio = () => {
                 >
                   {project.images.map(i => {
                     return (
-                      <div key={i} className='portfolio__image-container'>
-                        <img src={i} className='portfolio__image' />
+                      <div key={i} className='portfolio-image-container'>
+                        <img src={i} className='portfolio-image' />
                       </div>
                     )
                   })}

@@ -17,23 +17,23 @@ const About = () => {
       <h5>Dowiedz się więcej</h5>
       <h2>O mnie</h2>
 
-      <div className="container about__container">
-        <div className="about__cards">
+      <div className="container about-container">
+        <div className="about-cards">
 
-          <article className='about__card'>
-            <FaAward className='about__icon'/>
+          <article className='about-card'>
+            <FaAward className='about-icon'/>
             <h5>Doświadczenie</h5>
             <small>{calculatYearsMonth()} doświadczenia na stanowisku frontend developera</small>
           </article>
 
-          <article className='about__card'>
-            <CgCodeSlash className='about__icon'/>
+          <article className='about-card'>
+            <CgCodeSlash className='about-icon'/>
             <h5>Najczęściej używane technologie</h5>
             <p><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></p>
           </article>
 
-          <article className='about__card'>
-            <VscFolderLibrary className='about__icon'/>
+          <article className='about-card'>
+            <VscFolderLibrary className='about-icon'/>
             <h5>Projekty</h5>
             <small>Wiele projektów komercyjnych oraz własnych</small>
           </article>
