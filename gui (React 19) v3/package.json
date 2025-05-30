@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "node ./copy-build.js \"gui (React18) v3\"",
+    "deploy": "node ./copy-build.js \"gui (React 19) v3\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

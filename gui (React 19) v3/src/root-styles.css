@@ -1,0 +1,52 @@
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-primary: hsl(353, 70%, 43%);
+  --color-primary-dark: hsl(353, 70%, 33%);
+  --color-primary-darker: hsl(353, 70%, 23%);
+  --color-primary-darkest: hsl(353, 70%, 13%);
+
+  --color-primary-text: hsl(353, 70%, 95%);
+  --color-primary-text-dark: hsl(353, 70%, 75%);
+
+  --color-secondary: hsl(22, 80%, 75%);
+  --color-secondary-dark: hsl(22, 80%, 55%);
+  
+  --color-blur: rgba(186, 33, 51, 0.01);
+  --color-card: rgba(186, 33, 51, 0.5);
+  
+  --ff: "Lato", sans-serif;
+  --fw: 500;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  background: var(--color-primary-darkest);
+  color: var(--color-primary-text);
+}
