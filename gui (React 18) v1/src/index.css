@@ -1,54 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
-/* zmienne: https://colorhunt.co/palettes/dark */
-:root {
-  --color-bg: #030c1f;
-  --color-bg-variant: #192d4a;
-  --color-primary: rgb(77, 181, 255);
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-secondary: rgba(77, 181, 255, 0.05);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
-
-  --container-width-lg: 75%;
-  --container-width-md: 85%;
-  --container-width-sm: 90%;
-
-  --transition: all 400ms ease;
-}
-
-
-/* główne */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
-  background: var(--color-bg);
-  color: var(--color-white);
-}
+@import './root-styles.css';
 
 
 .container {
@@ -95,7 +46,7 @@ a:hover {
 }
 
 
-.btn {
+.button {
   padding: 0.7em 1.2em;
   border-radius: 0.4rem;
   white-space: nowrap;
@@ -104,12 +55,12 @@ a:hover {
   cursor: pointer;
   transition: var(--transition);
 }
-.btn:hover {
+.button:hover {
   color: var(--color-bg);
   background: var(--color-white);
   border-color: transparent;
 }
-.btn-primary {
+.button-primary {
   color: var(--color-bg);
   background: var(--color-primary);
 }
@@ -136,7 +87,6 @@ input, textarea, button, select, a {
     padding: 2em 0 12em 0;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .container {

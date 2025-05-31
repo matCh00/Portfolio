@@ -17,29 +17,26 @@
   gap: 1.5rem;
 }
 
-.about-content-card > .clr-secondary:first-child {
+.about-content-card > .color-secondary:first-child {
   font-size: 1.5rem;
 }
 
 
-/* szeroki monitor */
 @media screen and (width > 82rem) {
   #about {
-    padding-top: 9rem;  /* powiększona przerwa pomiedzy sekcjami */
+    padding-top: 9rem;
   }
 }
 
-/* zwykły monitor */
 @media screen and (width <= 82rem) {
   #about {
-    padding-top: 7.5rem;  /* powiększona przerwa pomiedzy sekcjami */
+    padding-top: 7.5rem;
   }
 }
 
-/* tablety */
 @media screen and (width <= 62rem) {
   #about {
-    padding-top: 6rem;  /* powiększona przerwa pomiedzy sekcjami */
+    padding-top: 6rem;
   }
   .about-content {
     flex-direction: column;
@@ -47,10 +44,9 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   #about {
-    padding-top: 4.5rem;  /* powiększona przerwa pomiedzy sekcjami */
+    padding-top: 4.5rem;
   }
   .about-content {
     flex-direction: column;

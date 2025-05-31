@@ -1,10 +1,10 @@
-.experience__container {
+.experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
 
-.experience__container > div {
+.experience-container > div {
   background: var(--color-bg-variant);
   padding: 2rem;
   border-radius: 2rem;
@@ -12,65 +12,62 @@
   transition: var(--transition);
 }
 
-.experience__container > div:hover {
+.experience-container > div:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.experience__container > div h3 {
+.experience-container > div h3 {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--color-primary);
   white-space: nowrap;
 }
 
-.experience__content {
+.experience-content {
   columns: 8rem;
 }
 
-.experience__details {
+.experience-details {
   display: flex;
   gap: 0.5rem;
   break-inside: avoid-column;
   margin-bottom: 2rem;
 }
 
-.experience__details-icon {
+.experience-details-icon {
   margin-top: 6px;
   color: var(--color-primary);
   min-width: 1rem !important;
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
-  .experience__container {
+  .experience-container {
     grid-template-columns: 1fr;
   }
-  .experience__container > div {
+  .experience-container > div {
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
   }
-  .experience__content {
+  .experience-content {
     padding: 0 1rem;
   }
-  .experience__content {
+  .experience-content {
     columns: 10rem;
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
-  .experience__container {
+  .experience-container {
     gap: 1rem;
   }
-  .experience__content {
+  .experience-content {
     padding-right: 0;
   }
-  .experience__content {
+  .experience-content {
     columns: 12rem;
   }
 }

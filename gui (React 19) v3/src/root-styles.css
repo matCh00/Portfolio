@@ -1,0 +1,62 @@
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-primary: hsl(228, 41%, 30%);
+  --color-primary-dark: hsl(228, 41%, 20%);
+  --color-primary-darker: hsl(228, 41%, 10%);
+  --color-primary-darkest: hsl(228, 41%, 5%);
+
+  --color-primary-text: hsl(228, 41%, 95%);
+  --color-primary-text-dark: hsl(228, 41%, 75%);
+
+  --color-secondary: hsl(37, 99%, 60%);
+  --color-secondary-dark: hsl(37, 99%, 40%);
+  
+  --color-blur: hsla(228, 41%, 30%, 0.1);
+  --color-card: hsla(228, 41%, 5%, 0.7);
+  
+  --ff: "Lato", sans-serif;
+  --fw: 500;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  background: var(--color-primary-darkest);
+  color: var(--color-primary-text);
+}
+
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}

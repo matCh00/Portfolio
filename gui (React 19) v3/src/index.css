@@ -1,0 +1,90 @@
+@import './root-styles.css';
+
+
+.color-primary {
+  color: var(--color-primary)
+}
+.color-primary-dark {
+  color: var(--color-primary-dark)
+}
+.color-primary-text {
+  color: var(--color-primary-text)
+}
+.color-primary-text-dark {
+  color: var(--color-primary-text-dark)
+}
+.color-secondary {
+  color: var(--color-secondary)
+}
+.color-secondary-dark {
+  color: var(--color-secondary-dark)
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.backdrop-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  background: var(--color-blur);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-primary-text);
+  width: 100vw;
+}
+
+.section-header h1 {
+  font-size: 2em;
+}
+.section-header h2 {
+  font-size: 1.8em;
+}
+.section-header h3 {
+  font-size: 1.6em;
+}
+.section-header h4 {
+  font-size: 1.4em;
+}
+.section-header h5 {
+  font-size: 1.2em;
+}
+.section-header > * {
+  text-shadow: 2px 2px 5px var(--color-primary-darker);
+}
+
+.bigger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

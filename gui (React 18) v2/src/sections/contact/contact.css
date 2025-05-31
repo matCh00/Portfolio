@@ -16,7 +16,7 @@
   gap: 1rem;
 }
 
-.contact-content-card > .clr-secondary:first-child {
+.contact-content-card > .color-secondary:first-child {
   font-size: 1.5rem;
 }
 
@@ -25,7 +25,6 @@
 }
 
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .contact-content {
     grid-template-columns: 1fr 1fr;
@@ -33,7 +32,6 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .contact-content {
     grid-template-columns: 1fr 1fr;

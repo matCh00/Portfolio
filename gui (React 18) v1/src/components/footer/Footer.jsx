@@ -4,10 +4,11 @@ import {FaFacebook} from 'react-icons/fa'
 
 
 const Footer = () => {
+  
   return (
     <footer>
 
-      <a href="#" className='footer__logo'>Mateusz Chalik</a>
+      <a href="#" className='footer-logo'>Mateusz Chalik</a>
 
       <ul className='permalinks'>
         <li><a href="#">Streszczenie</a></li>
@@ -18,7 +19,7 @@ const Footer = () => {
         <li><a href="#contact">Kontakt</a></li>
       </ul>
 
-      <div className="footer__copyright">
+      <div className="footer-copyright">
         <small>&copy; Mateusz Chalik. Wszelkie prawa zastrzeżone.</small>
       </div>
 

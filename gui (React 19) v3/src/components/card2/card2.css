@@ -1,0 +1,76 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.glass-card2 {
+  backdrop-filter: blur(10px);
+  background-color: var(--color-card);
+  border-radius: 1em;
+
+  border: none;
+  overflow: hidden;
+  isolation: isolate;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2em;
+  width: 20vw;
+}
+
+.glass-card2::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  
+  background: conic-gradient(
+    from var(--angle),
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  animation: spin 2s linear infinite;
+  
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  
+  padding: 2px;
+  border-radius: inherit;
+}
+
+
+@media (max-width: 1200px) {
+  .glass-card2 {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .glass-card2 {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass-card2 {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .glass-card2 {
+    width: 90vw;
+  }
+}

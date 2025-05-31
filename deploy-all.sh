@@ -6,6 +6,7 @@
 projects=(
   "gui (React 18) v1"
   "gui (React 18) v2"
+  "gui (React 19) v3"
 )
 
 for project in "${projects[@]}"; do
@@ -128,6 +129,12 @@ cat <<EOF > docs/index.html
                 <div class="version-badge">Version 2.0</div>
                 <h2>Portfolio v2</h2>
                 <p>Second version of portfolio</p>
+            </a>
+
+            <a href="./v3/" class="project-card">
+                <div class="version-badge">Version 3.0</div>
+                <h2>Portfolio v3</h2>
+                <p>Third version of portfolio</p>
             </a>
         </div>
 

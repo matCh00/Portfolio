@@ -1,17 +1,17 @@
-.about__container {
+.about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about__cards {
+.about-cards {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
-.about__card {
+.about-card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
@@ -20,46 +20,43 @@
   transition: var(--transition);
 }
 
-.about__card:hover {
+.about-card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.about__card h5 {
+.about-card h5 {
   font-size: 0.9rem;
 }
 
-.about__card small {
+.about-card small {
   font-size: 0.7rem;
   color: var(--color-light);
 }
 
-.about__icon {
+.about-icon {
   color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.about__container p {
+.about-container p {
   color: var(--color-light);
   margin: 2rem;
   text-align: center;
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
-  .about__cards {
+  .about-cards {
     width: 75%;
     gap: 2rem;
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
-  .about__cards {
+  .about-cards {
     width: 90%;
     gap: 1rem;
   }

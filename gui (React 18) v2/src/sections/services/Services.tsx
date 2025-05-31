@@ -2,28 +2,10 @@ import React from 'react';
 import Card2 from '../../components/card-2/Card2';
 import './services.css';
 import {AiOutlineCheck} from 'react-icons/ai';
+import {services} from '@portfolio/shared/sections/services'
+
 
 const Services = () => {
-
-  const services = [
-    {key: 'Implementacja GUI', values: [
-      {key: 'Najnowsze wersje Angular'},
-      {key: 'Starsze wersje Angular'},
-      {key: 'Najnowsze wersje React'},
-      {key: 'Najnowsze wersje Vue'},
-      {key: 'Znajomość PrimeFaces'},
-    ]},
-    {key: 'Dobre praktyki programowania', values: [
-      {key: 'Tworzenie czystego kodu'},
-      {key: 'Dobre praktyki UI/UX'},
-      {key: 'Implementacja animacji'},
-      {key: 'Responsywność aplikacji'},
-    ]},
-    {key: 'Zarządzanie aplikacją', values: [
-      {key: 'Dobre praktyki Git'},
-      {key: 'Znajomość Docker'},
-    ]}
-  ]
 
   return (
     <section id='services' className='hidden'>
@@ -45,13 +27,12 @@ const Services = () => {
                   {s.values.map(v => {
                     return (
                       <p key={v.key}>
-                        <AiOutlineCheck className='clr-secondary'/> {v.key}
+                        <AiOutlineCheck className='color-secondary'/> {v.key}
                       </p>
                     )
                   })}
                 </div>
               </Card2>
-          
             )
           })}
 

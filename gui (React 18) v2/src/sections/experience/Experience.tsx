@@ -2,29 +2,10 @@ import React from 'react';
 import Card2 from '../../components/card-2/Card2';
 import './experience.css';
 import {SlGraduation} from 'react-icons/sl';
+import {experienceFront, experienceBackend, experienceOthers} from '@portfolio/shared/sections/experience'
 
 
 const Experience = () => {
-
-  const experienceFront = [
-    {key: 'Angular', value: ''},
-    {key: 'TypeScript', value: ''},
-    {key: 'React', value: ''},
-    {key: 'Vue', value: ''},
-    {key: 'HTML', value: ''},
-    {key: 'CSS/SCSS', value: ''},
-    {key: 'PrimeFaces', value: ''},
-  ]
-
-  const experienceBackend = [
-    {key: 'Python', value: ''},
-    {key: 'Firebase', value: ''},
-  ]
-
-  const experienceOthers = [
-    {key: 'React Native', value: ''},
-    {key: 'Docker', value: ''},
-  ]
 
   return (
     <section id='experience' className='hidden'>
@@ -36,7 +17,6 @@ const Experience = () => {
           <h1>Doświadczenie</h1>
         </div>
 
-
         <div className="experience-content">
 
           <Card2 header={'Frontend'} lightHeader={false}>
@@ -44,7 +24,7 @@ const Experience = () => {
               {experienceFront.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}
@@ -56,7 +36,7 @@ const Experience = () => {
               {experienceBackend.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}
@@ -68,7 +48,7 @@ const Experience = () => {
               {experienceOthers.map(e => {
                 return (
                   <p key={e.key}>
-                    <SlGraduation className='clr-secondary'/> {e.key} &nbsp;&nbsp; 
+                    <SlGraduation className='color-secondary'/> {e.key} &nbsp;&nbsp; 
                   </p>
                 )
               })}

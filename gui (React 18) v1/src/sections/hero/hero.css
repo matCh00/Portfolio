@@ -24,23 +24,22 @@ header {
   overflow: hidden;
 }
 
-.header__container {
+.header-container {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
 }
 
-.header__content {
+.header-content {
   position: relative;
   margin-top: 15vh;
 }
 
-.header__content h4 {
+.header-content h4 {
   color: var(--color-primary);
 }
 
 
-/* portret */
 .me {
   position: relative;
   display: flex;
@@ -49,7 +48,6 @@ header {
 }
 
 
-/* orb wkoło portretu */
 .me::after {
   position: absolute;
   z-index: -1;
@@ -70,42 +68,37 @@ header {
   animation: spin 2.5s linear infinite;
 }
 
-.me__img {
+.me-img {
   border-radius: 1.5rem;
   transform: rotate(-3deg);
   transition: var(--transition);
   overflow: hidden;
 }
-.me__img:hover {
+.me-img:hover {
   transform: rotate(0);
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
   .socials {
     display: none !important;
   }
-  .header__content {
+  .header-content {
     margin-top: 5vh;
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
   header {
     padding: 3rem 0 2rem 0;
   }
 }
 
-
-/* Portrait */
 @media screen and (orientation: portrait) {
   header {
     padding-top: 5rem;
   }
-  .header__container {
+  .header-container {
     display: block;
   }
   .me {
@@ -118,10 +111,8 @@ header {
   }
 }
 
-
-/* Landscape */
 @media screen and (orientation: landscape) {
-  .header__container {
+  .header-container {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 3rem;

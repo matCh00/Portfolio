@@ -1,16 +1,16 @@
-.contact__container {
+.contact-container {
   width: 80%;
   display: flex;
   justify-content: center;
 }
 
-.contact__options {
+.contact-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
 }
 
-.contact__option {
+.contact-option {
   background: var(--color-bg-variant);
   padding: 1rem;
   border-radius: 1rem;
@@ -20,47 +20,42 @@
   display: block;
 }
 
-.contact__option:hover {
+.contact-option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
 }
 
-.contact__option-icon {
+.contact-option-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.contact__option a {
+.contact-option a {
   margin-top: 0.5rem;
   display: inline-block;
   font-size: 0.8rem;
 }
 
 
-/* średni ekran */
 @media screen and (max-width: 1024px) {
-  .contact__options {
+  .contact-options {
     gap: 2rem;
   }
 }
 
-
-/* mały ekran */
 @media screen and (max-width: 600px) {
-  .contact__options {
+  .contact-options {
     width: var(--container-width-sm);
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
 
-
-/* Portrait */
 @media screen and (orientation: portrait) {
-  .contact__options {
+  .contact-options {
     display: inline-block;
   }
-  .contact__option {
+  .contact-option {
     display: table;
     margin-bottom: 2em;
     width: 100%;

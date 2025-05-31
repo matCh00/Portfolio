@@ -1,0 +1,57 @@
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-bg: #030c1f;
+  --color-bg-variant: #192d4a;
+  --color-primary: rgb(77, 181, 255);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-secondary: rgba(77, 181, 255, 0.05);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --container-width-lg: 75%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+
+  --ff: 'Poppins', sans-serif;
+  --fw: 500;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}

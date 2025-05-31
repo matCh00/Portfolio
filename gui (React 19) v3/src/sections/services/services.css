@@ -1,0 +1,35 @@
+section#services {
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+
+@media (max-width: 1200px) {
+  .services-cards {
+  }
+}
+
+@media (max-width: 992px) {
+  .services-cards {
+  }
+}
+
+@media (max-width: 768px) {
+  .services-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

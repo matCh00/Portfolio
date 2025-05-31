@@ -1,0 +1,48 @@
+section#portfolio {
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary-dark));
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient a {
+  color: var(--color-secondary-dark);
+}
+
+
+@media (max-width: 1200px) {
+  .portfolio-cards {
+    gap: 7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-cards {
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-cards {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-cards {
+    gap: 4rem;
+  }
+}

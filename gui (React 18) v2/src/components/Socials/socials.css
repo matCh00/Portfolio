@@ -5,14 +5,14 @@
 
   position: absolute;
   right: 6rem;
-  top: 20vh;  /* położenie */
+  top: 20vh;
   
   gap: 1rem;
 }
 
 
 .socials a {
-  font-size: 1.4em;  /* większa czcionka */
+  font-size: 1.4em;
 
   color: var(--color-neutral-darkest);
 }
@@ -22,16 +22,14 @@
 }
 
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .socials {
-    display: none;  /* brak dla mobilek */
+    display: none;
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .socials {
-    display: none;  /* brak dla mobilek */
+    display: none;
   }
 }

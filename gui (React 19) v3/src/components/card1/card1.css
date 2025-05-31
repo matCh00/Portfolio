@@ -1,0 +1,43 @@
+.glass-card1 {
+  backdrop-filter: blur(10px);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-primary-text-dark);
+  border-radius: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2em;
+
+  width: 20vw;
+}
+
+.glass-card1:hover {
+  border: 1px solid var(--color-secondary-dark);
+}
+
+
+@media (max-width: 1200px) {
+  .glass-card1 {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .glass-card1 {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass-card1 {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .glass-card1 {
+    width: 90vw;
+  }
+}

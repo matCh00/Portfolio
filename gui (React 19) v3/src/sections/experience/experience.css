@@ -1,0 +1,38 @@
+section#experience {
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.experience-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+}
+
+
+@media (max-width: 1200px) {
+  .experience-cards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 992px) {
+  .experience-cards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-cards {
+    flex-direction: column;
+  }
+}

@@ -6,27 +6,10 @@ import {AiOutlineFundProjectionScreen, AiFillHtml5} from 'react-icons/ai';
 import {FaAngular, FaReact} from 'react-icons/fa';
 import {DiCss3} from 'react-icons/di';
 import {CgCodeSlash} from 'react-icons/cg';
+import calculatYearsMonth from "@portfolio/shared/sections/about"
 
 
 const About = () => {
-
-  function calculateMonthsFromJuly2022() {
-    const startDate = new Date(2022, 6, 1);
-    const currentDate = new Date();
-
-    let years = currentDate.getFullYear() - startDate.getFullYear();
-    let months = currentDate.getMonth() - startDate.getMonth();
-
-    if (months < 0) {
-      years -= 1;
-      months += 12;
-    }
-
-    if (months === 0) {
-      return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}`;
-    }
-    return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}` + ` i ${months} miesięcy`;
-  }
 
   return (
     <section id='about' className='hidden'>
@@ -42,24 +25,24 @@ const About = () => {
 
           <Card1>
             <div className="about-content-card">
-              <BiTimeFive className='clr-secondary'/>
-              <p>{calculateMonthsFromJuly2022()} doświadczenia na stanowisku frontend developera</p>
+              <BiTimeFive className='color-secondary'/>
+              <h5 className='color-primary-dark'>Doświadczenie</h5>
+              <p>{calculatYearsMonth()} doświadczenia na stanowisku frontend developera</p>
             </div>
           </Card1>
 
           <Card1>
             <div className="about-content-card">
-              <CgCodeSlash className='clr-secondary'/>
-                <p>
-                  Najczęściej używane technologie <br/>
-                  <span style={{fontSize: '1.5rem'}}><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></span>
-                </p>
+              <CgCodeSlash className='color-secondary'/>
+              <h5 className='color-primary-dark'>Najczęściej używane technologie</h5>
+              <p style={{fontSize: '1.5rem'}}><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></p>
             </div>
           </Card1>
 
           <Card1>
             <div className="about-content-card">
-              <AiOutlineFundProjectionScreen className='clr-secondary'/>
+              <AiOutlineFundProjectionScreen className='color-secondary'/>
+              <h5 className='color-primary-dark'>Projekty</h5>
               <p>Wiele projektów komercyjnych oraz własnych</p>
             </div>
           </Card1>

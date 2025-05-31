@@ -1,6 +1,6 @@
 import React from 'react';
 import './heroPhoto.css';
-const ME = require("../../assets/personal/me.png");
+const ME = require("@portfolio/shared/assets/personal/me.png");
 
 
 const HeroPhoto = () => {

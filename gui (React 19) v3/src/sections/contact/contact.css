@@ -1,0 +1,41 @@
+section#contact {
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+
+@media (max-width: 1200px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}

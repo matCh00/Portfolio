@@ -1,0 +1,43 @@
+section#about {
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+}
+
+.technologies {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+@media (max-width: 1200px) {
+  .about-cards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-cards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-cards {
+    flex-direction: column;
+  }
+}

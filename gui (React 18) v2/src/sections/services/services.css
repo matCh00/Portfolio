@@ -24,12 +24,11 @@
   white-space: nowrap;
 }
 
-.services-content-card > p > .clr-secondary:first-child {
+.services-content-card > p > .color-secondary:first-child {
   margin-right: 1rem;
 }
 
 
-/* tablety */
 @media screen and (width <= 62rem) {
   .services-content {
     flex-direction: column;
@@ -37,7 +36,6 @@
   }
 }
 
-/* smartfony */
 @media screen and (width <= 43rem) {
   .services-content {
     flex-direction: column;

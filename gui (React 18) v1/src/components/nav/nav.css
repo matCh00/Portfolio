@@ -31,7 +31,6 @@ nav a.active {
 }
 
 
-/* Portrait */
 @media screen and (orientation: portrait) {
   nav a {
     padding: clamp(.4em, .2em + 2vw, 1.5em);

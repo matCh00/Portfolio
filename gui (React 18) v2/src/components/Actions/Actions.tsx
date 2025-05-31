@@ -1,13 +1,14 @@
 import React from 'react';
 import './actions.css';
-const CV = require('../../assets/personal/cv.pdf');
+const CV = require('@portfolio/shared/assets/personal/cv.pdf');
 
 
 const Actions = () => {
+  
   return (
     <div className='actions'>
 
-      <a href={CV} download='CV Mateusz Chalik' className='btn'>Pobierz CV</a>
+      <a href={CV} download='CV Mateusz Chalik' className='button'>Pobierz CV</a>
       
     </div>
   )
