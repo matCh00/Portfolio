@@ -1,28 +1,9 @@
+/* BASIC STYLES */
+
 .contact-container {
-  width: 80%;
   display: flex;
   justify-content: center;
-}
-
-.contact-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-}
-
-.contact-option {
-  background: var(--color-bg-variant);
-  padding: 1rem;
-  border-radius: 1rem;
-  text-align: center;
-  border: 1px solid transparent;
-  transition: var(--transition);
-  display: block;
-}
-
-.contact-option:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  width: 80%;
 }
 
 .contact-option-icon {
@@ -31,33 +12,61 @@
 }
 
 .contact-option a {
-  margin-top: 0.5rem;
   display: inline-block;
+  margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (max-width: 1024px) {
+.contact-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  width: auto;
+}
+
+.contact-option {
+  text-align: center;
+  background: var(--color-bg-variant);
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: var(--transition);
+  display: block;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.contact-option:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
   .contact-options {
     gap: 2rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 576px) {
   .contact-options {
     width: var(--container-width-sm);
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-}
 
-@media screen and (orientation: portrait) {
-  .contact-options {
-    display: inline-block;
-  }
   .contact-option {
     display: table;
-    margin-bottom: 2em;
     width: 100%;
+    margin-bottom: 2em;
   }
 }

@@ -17,10 +17,10 @@ const Portfolio = () => {
 
       <div className="container portfolio-container">
 
-        {projects.filter(p => portfolioTitles.includes(p.title+'')).map(project => {
+        {projects.filter((p, index, self) => portfolioTitles.includes(p.title+'') && index === self.findIndex((t) => (t.title === p.title))).map(project => {
           return (
 
-            <article key={project.title} className={project.desktop ? 'portfolio-item portfolio-item-desktop' : 'portfolio-item'}>
+            <article key={Math.random()+project.title} className={project.desktop ? 'portfolio-item portfolio-item-desktop' : 'portfolio-item'}>
 
               <div className="portfolio-description">
                 <h3>

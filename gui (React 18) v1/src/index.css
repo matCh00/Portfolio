@@ -1,23 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import './root-styles.css';
 
-
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
-
+/* BASIC STYLES */
 
 h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-
-section {
-  font-size: 1.1rem;
-  padding: 3em 0 12em 0;
+header {
+  min-height: 100vh;
 }
-
 
 section > h2 {
   text-align: center;
@@ -25,60 +17,71 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-
 section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-
 .text-light {
   color: var(--color-light) !important;
 }
-
 
 a {
   color: var(--color-primary);
   transition: var(--transition);
 }
+
 a:hover {
   color: var(--color-white);
 }
 
-
 .button {
+  display: inline-block;
   padding: 0.7em 1.2em;
-  border-radius: 0.4rem;
   white-space: nowrap;
-  color: var(--color-primary);
   border: 1px solid var(--color-primary);
+  border-radius: 0.4rem;
+  color: var(--color-primary);
   cursor: pointer;
   transition: var(--transition);
 }
+
 .button:hover {
   color: var(--color-bg);
   background: var(--color-white);
   border-color: transparent;
 }
+
 .button-primary {
   color: var(--color-bg);
   background: var(--color-primary);
 }
 
-
 img {
   display: block;
-  width: 100%; 
+  width: 100%;
   object-fit: cover;
 }
 
+/* RESPONSIVE STYLES */
 
-input, textarea, button, select, a {
-  -webkit-tap-highlight-color: transparent;
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
+section {
+  font-size: 1.1rem;
+  padding: 3em 0 12em 0;
+}
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
+  section {
+    padding: 2em 0 18em 0;
+  }
+}
+
+@media (max-width: 992px) {
   .container {
     width: var(--container-width-md);
   }
@@ -88,17 +91,18 @@ input, textarea, button, select, a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
+  section {
+    padding: 2em 0 6em 0;
+  }
+}
+
+@media (max-width: 576px) {
   .container {
     width: var(--container-width-sm);
   }
-  
-  section {
-    padding: 3em 0 2em 0;
-    padding-top: 1em;
-  }
 
-  section > h2 {
-    margin-top: 2em;
+  section {
+    padding: 1em 0 2em 0;
   }
 }

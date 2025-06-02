@@ -1,16 +1,9 @@
+/* BASIC STYLES */
+
 section#portfolio {
   flex-direction: column;
   gap: 5rem;
-  min-height: 100vh;
-  margin-top: 5rem;
 }
-
-.portfolio-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
-}
-
 
 .text-gradient {
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary-dark));
@@ -22,6 +15,13 @@ section#portfolio {
   color: var(--color-secondary-dark);
 }
 
+/* RESPONSIVE STYLES */
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
 
 @media (max-width: 1200px) {
   .portfolio-cards {

@@ -1,5 +1,6 @@
 @import './root-styles.css';
 
+/* BASIC STYLES */
 
 .background-neutral {
   background: var(--color-neutral-dark);
@@ -20,19 +21,9 @@
   color: var(--color-secondary);
 }
 
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--color-primary);
-}
-
 .section-header {
   margin-bottom: 2rem;
 }
-
 
 .container {
   display: flex;
@@ -41,7 +32,6 @@ section {
   align-items: center;
   width: 100%;
 }
-
 
 .container h4 {
   color: var(--color-primary-dark);
@@ -56,7 +46,6 @@ section {
   color: var(--color-primary);
 }
 
-
 a {
   color: var(--color-secondary);
   transition: color 300ms ease;
@@ -65,77 +54,26 @@ a:hover {
   color: var(--color-primary);
 }
 
-
 .bigger-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-
-@media screen and (width > 82rem) {
-  body {
-    font-size: 1.2rem;
-  }
-  section {
-    padding: 6rem 9rem;
-  }
-  section:last-of-type {
-    padding-bottom: 12rem;
-  }
+.hidden {
+  opacity: 0;
+  transition: opacity 1.5s;
 }
-
-@media screen and (width <= 82rem) {
-  body {
-    font-size: 1.1rem;
-  }
-  section {
-    padding: 5rem 6rem;
-  }
-  section:last-of-type {
-    padding-bottom: 12rem;
-  }
+.show {
+  opacity: 1;
 }
-
-@media screen and (width <= 62rem) {
-  body {
-    font-size: 1.1rem;
-  }
-  section {
-    padding: 4rem 5rem;
-  }
-  section:first-of-type {
-    padding-top: 0rem;
-  }
-  section:last-of-type {
-    padding-bottom: 8rem;
-  }
-}
-
-@media screen and (width <= 43rem) {
-  body {
-    font-size: 0.8rem;
-  }
-  section {
-    padding: 3rem 3rem;
-  }
-  section:first-of-type {
-    padding-top: 0rem;
-  }
-  section:last-of-type {
-    padding-bottom: 6rem;
-  }
-}
-
 
 .button {
   color: var(--color-primary);
   background: var(--color-neutral-dark);
   border: 1px solid var(--color-neutral-dark);
-
   padding: 0.5em 1em;
   border-radius: 1.5rem;
   white-space: nowrap;
-  
   cursor: pointer;
   transition: background-color 400ms ease;
 }
@@ -150,17 +88,69 @@ a:hover {
   background: var(--color-secondary);
 }
 
+/* RESPONSIVE STYLES */
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-primary);
+  padding: 8rem 12rem;
+}
 
-.hidden {
-  opacity: 0;
-  transition: opacity 1.5s
+section:first-of-type {
+  padding-top: 8rem;
 }
-.show {
-  opacity: 1;
+
+section:last-of-type {
+  padding-bottom: 20rem;
 }
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
+
+@media (max-width: 1200px) {
+  section {
+    padding: 6rem 9rem;
+  }
+  
+  section:last-of-type {
+    padding-bottom: 12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 5rem 6rem;
+  }
+
+  section:last-of-type {
+    padding-bottom: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 5rem;
+  }
+
+  section:first-of-type {
+    padding-top: 0rem;
+  }
+
+  section:last-of-type {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 3rem 3rem;
+  }
+
+  section:first-of-type {
+    padding-top: 0rem;
+  }
+
+  section:last-of-type {
+    padding-bottom: 6rem;
   }
 }

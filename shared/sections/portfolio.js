@@ -8,20 +8,20 @@ const { mr1_10, mr2_10, mr3_10, mr4_10, mr5_10, mr6_10 } = require('../assets/Mo
 
 export const projects = [
   {
-    title: 'Portfolio v1',
-    subtitle: 'Strona portfolio typu Single Page Application',
-    technology: 'React + JavaScript',
-    images: [p1_1, p1_2, p1_3, p1_4],
-    desktop: false,
-    link: 'https://match00.github.io/Portfolio/v1/'
-  },
-  {
     title: 'Portfolio v2',
     subtitle: 'Strona portfolio typu Single Page Application',
     technology: 'React + TypeScript',
     images: [p2_1, p2_2, p2_3, p2_4],
     desktop: false,
     link: 'https://match00.github.io/Portfolio/v2/'
+  },
+  {
+    title: 'Portfolio v1',
+    subtitle: 'Strona portfolio typu Single Page Application',
+    technology: 'React + JavaScript',
+    images: [p1_1, p1_2, p1_3, p1_4],
+    desktop: false,
+    link: 'https://match00.github.io/Portfolio/v1/'
   },
   {
     title: 'JustTravel',

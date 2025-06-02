@@ -1,19 +1,7 @@
-.socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: absolute;
-  right: 6rem;
-  top: 20vh;
-  
-  gap: 1rem;
-}
-
+/* BASIC STYLES */
 
 .socials a {
   font-size: 1.4em;
-
   color: var(--color-neutral-darkest);
 }
 
@@ -21,15 +9,32 @@
   color: var(--color-secondary);
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width <= 62rem) {
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 6rem;
+  top: 20vh;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
   .socials {
     display: none;
   }
 }
 
-@media screen and (width <= 43rem) {
-  .socials {
-    display: none;
-  }
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }

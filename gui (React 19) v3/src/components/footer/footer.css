@@ -1,39 +1,38 @@
-footer {  
-  font-size: 0.8em;
-  width: 100vw;
-  height: 5rem;
-  margin-top: 5rem;
+/* BASIC STYLES */
 
+
+/* RESPONSIVE STYLES */
+
+footer {
+  font-size: 0.8em;
+  background: var(--color-primary-dark);
+  color: var(--color-primary-text);
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-
-  background: var(--color-primary-dark);
-  color: var(--color-primary-text);
+  height: 5rem;
 }
 
-
 @media (max-width: 1200px) {
-  footer {
-    height: 5rem;
-  }
+
 }
 
 @media (max-width: 992px) {
-  footer {
-    height: 5rem;
-  }
+
 }
 
 @media (max-width: 768px) {
-  footer {
-    height: 5rem;
-  }
+
 }
 
 @media (max-width: 576px) {
   footer {
     height: 3rem;
   }
+}
+
+@media (min-width: 1200.1px) {
+
 }

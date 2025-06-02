@@ -1,9 +1,11 @@
+/* BASIC STYLES */
+
 footer {
-  background: var(--color-primary);
-  padding: 3rem 0;
   text-align: center;
-  font-size: 0.9rem;
+  background: var(--color-primary);
   margin-top: 7rem;
+  padding: 3rem 0;
+  font-size: 0.9rem;
 }
 
 footer a {
@@ -11,11 +13,29 @@ footer a {
 }
 
 .footer-logo {
+  display: block;
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  display: block;
 }
+
+.footer-socials a {
+  display: flex;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.footer-socials a:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+/* RESPONSIVE STYLES */
 
 .permalinks {
   display: flex;
@@ -32,45 +52,35 @@ footer a {
   margin-bottom: 3rem;
 }
 
-.footer-socials a {
-  background: var(--color-bg);
-  color: var(--color-white);
-  padding: 0.8rem;
-  border-radius: 0.7rem;
-  display: flex;
-  border: 1px solid transparent;
-  font-size: 2rem;
-}
-
-.footer-socials a:hover {
-  background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
-}
-
 .footer-copyright {
   margin-bottom: 4rem;
   color: var(--color-bg);
 }
 
+@media (max-width: 1200px) {
 
-@media screen and (max-width: 1024px) {
+}
+
+@media (max-width: 992px) {
+  
+}
+
+@media (max-width: 768px) {
   .footer-socials {
     margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 576px) {
   .permalinks {
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .footer-socials {
     margin-bottom: 2rem;
   }
-}
 
-@media screen and (orientation: portrait) {
   .footer-copyright {
     padding-bottom: 4rem;
   }

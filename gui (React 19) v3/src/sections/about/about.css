@@ -1,14 +1,8 @@
+/* BASIC STYLES */
+
 section#about {
   flex-direction: column;
   gap: 5rem;
-  min-height: 100vh;
-}
-
-.about-cards {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 3rem;
 }
 
 .technologies {
@@ -17,6 +11,14 @@ section#about {
   gap: 1rem;
 }
 
+/* RESPONSIVE STYLES */
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+}
 
 @media (max-width: 1200px) {
   .about-cards {

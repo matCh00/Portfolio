@@ -1,21 +1,27 @@
 @import './root-styles.css';
 
+/* BASIC STYLES */
 
 .color-primary {
   color: var(--color-primary)
 }
+
 .color-primary-dark {
   color: var(--color-primary-dark)
 }
+
 .color-primary-text {
   color: var(--color-primary-text)
 }
+
 .color-primary-text-dark {
   color: var(--color-primary-text-dark)
 }
+
 .color-secondary {
   color: var(--color-secondary)
 }
+
 .color-secondary-dark {
   color: var(--color-secondary-dark)
 }
@@ -53,7 +59,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 
 section {
@@ -68,18 +73,23 @@ section {
 .section-header h1 {
   font-size: 2em;
 }
+
 .section-header h2 {
   font-size: 1.8em;
 }
+
 .section-header h3 {
   font-size: 1.6em;
 }
+
 .section-header h4 {
   font-size: 1.4em;
 }
+
 .section-header h5 {
   font-size: 1.2em;
 }
+
 .section-header > * {
   text-shadow: 2px 2px 5px var(--color-primary-darker);
 }
@@ -87,4 +97,34 @@ section {
 .bigger-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+/* RESPONSIVE STYLES */
+
+.content > :nth-child(3) ~ * {
+  margin-top: 30rem;
+}
+
+@media (max-width: 1200px) {
+  .content > :nth-child(3) ~ * {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content > :nth-child(3) ~ * {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content > :nth-child(3) ~ * {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .content > :nth-child(3) ~ * {
+    margin-top: 10rem;
+  }
 }

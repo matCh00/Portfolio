@@ -1,22 +1,10 @@
-.experience-content {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-areas:
-    "front"
-    "back"
-    "mob";
-
-  gap: 3rem;
-  width: 100%;
-}
-
+/* BASIC STYLES */
 
 .experience-content-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -31,7 +19,6 @@
   margin-right: 1rem;
 }
 
-
 .card2:nth-child(1) {
   grid-area: front;
 }
@@ -42,15 +29,21 @@
   grid-area: mob;
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width > 82rem) {
-  .experience-content {
-    grid-template-areas:
-      "front back mob";
-  }
+.experience-content {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 3rem;
+  width: 100%;
+  grid-template-areas: "front back mob";
 }
 
-@media screen and (width <= 82rem) {
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
   .experience-content {
     grid-template-areas:
       "front back"
@@ -58,15 +51,11 @@
   }
 }
 
-@media screen and (width <= 62rem) {
-  .experience-content {
-    grid-template-areas:
-      "front back"
-      "front mob";
-  }
+@media (max-width: 768px) {
+
 }
 
-@media screen and (width <= 43rem) {
+@media (max-width: 576px) {
   .experience-content {
     grid-template-areas:
       "front"

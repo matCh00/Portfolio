@@ -1,53 +1,12 @@
-#portfolio {
-  background: linear-gradient(45deg, var(--color-neutral-darker), var(--color-neutral-dark), var(--color-neutral-darker));
-}
-
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-content {
-  display: flex;
-  flex-direction: column;
-
-  gap: 3rem;
-}
-
-
-.portfolio-header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.html-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 2rem;
-}
-
+/* BASIC STYLES */
 
 .link {
   margin-left: 15px;
 }
 
-
-.portfolio-img-container {
-  margin: 0 3rem;
-}
-
 .portfolio-img {
   height: 25rem;
   object-fit: contain;
-
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -57,11 +16,12 @@
   user-select: none;
 }
 
-
-.carousel.carousel-slider {
-  padding: 0 0 3rem 0;
+.html-title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .carousel.carousel-slider .control-arrow {
@@ -73,32 +33,95 @@
   height: 0.6rem !important;
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width > 82rem) {
+#portfolio {
+  background: linear-gradient(45deg, var(--color-neutral-darker), var(--color-neutral-dark), var(--color-neutral-darker));
+  margin-block: 6rem;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.portfolio-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel.carousel-slider {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 3rem 0;
+}
+
+.portfolio-img-container {
+  margin: 0 3rem;
+}
+
+@media (max-width: 1200px) {
   #portfolio {
     margin-block: 6rem;
   }
+
+  .carousel.carousel-slider {
+    padding: 0 0 2rem 0;
+  }
 }
 
-@media screen and (width <= 82rem) {
+@media (max-width: 992px) {
   #portfolio {
     margin-block: 5rem;
   }
-}
 
-@media screen and (width <= 62rem) {
-  #portfolio {
-    margin-block: 4rem;
+  .carousel.carousel-slider {
+    padding: 0 0 1rem 0;
   }
+
+  .portfolio-header-content {
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .portfolio-img-container {
+    margin: 0 1rem;
+  }
+
   .portfolio-content {
     gap: 2rem;
   }
 }
 
-@media screen and (width <= 43rem) {
+@media (max-width: 768px) {
+  #portfolio {
+    margin-block: 4rem;
+  }
+
+  .portfolio-img-container {
+    margin: -3rem 1rem;
+  }
+
+  .portfolio-content h4 {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
   #portfolio {
     margin-block: 3rem;
   }
+
   .portfolio-content {
     gap: 1.5rem;
   }

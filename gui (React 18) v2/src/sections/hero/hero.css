@@ -1,63 +1,63 @@
-#hero {
-  background: linear-gradient(45deg, var(--color-secondary), var(--color-neutral));
-
-  font-size: 1.1em;
-}
-
-
-.container-hero {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+/* BASIC STYLES */
 
 .container-hero h4 {
   color: var(--color-neutral-darker);
+  white-space: nowrap;
 }
 
 .container-hero h1 {
   color: var(--color-primary);
+  white-space: nowrap;
 }
 
 .container-hero h3 {
   color: var(--color-neutral-darker);
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width > 82rem) {
-  #hero {
-    height: calc(100vh - 5rem);
-  }
+#hero {
+  background: linear-gradient(45deg, var(--color-secondary), var(--color-neutral));
+  font-size: 1.1em;
+  height: calc(100vh - 5rem);
 }
 
-@media screen and (width <= 82rem) {
-  #hero {
-    height: calc(100vh - 5rem);
-  }
+.container-hero {
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-@media screen and (width <= 62rem) {
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
   #hero {
     transition: height 200ms ease;
     height: 100vh;
     height: 100dvh;
   }
+
   .container-hero {
     flex-direction: column;
-    justify-content: space-evenly;
     height: 100%;
   }
 }
 
-@media screen and (width <= 43rem) {
+@media (max-width: 576px) {
   #hero {
     transition: height 200ms ease;
     height: 100vh;
     height: 100dvh;
     padding-bottom: 5rem;
   }
+
   .container-hero {
     flex-direction: column;
-    justify-content: space-evenly;
     height: 100%;
   }
 }

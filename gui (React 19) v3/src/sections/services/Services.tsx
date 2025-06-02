@@ -20,7 +20,7 @@ const Services = () => {
         {services.map(s => {
             return (
 
-              <Card1>
+              <Card1 key={Math.random()}>
                 <h2 className='color-secondary-dark'>{s.key}</h2>
 
                 {s.values.map(v => {

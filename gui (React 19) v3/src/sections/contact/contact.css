@@ -1,16 +1,17 @@
+/* BASIC STYLES */
+
 section#contact {
   flex-direction: column;
   gap: 5rem;
-  min-height: 100vh;
-  margin-top: 5rem;
 }
+
+/* RESPONSIVE STYLES */
 
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 5rem;
 }
-
 
 @media (max-width: 1200px) {
   .contact-cards {

@@ -1,19 +1,10 @@
-.about-content {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-
-  gap: 3rem;
-  width: 100%;
-}
-
+/* BASIC STYLES */
 
 .about-content-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 1.5rem;
 }
 
@@ -21,33 +12,46 @@
   font-size: 1.5rem;
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width > 82rem) {
-  #about {
-    padding-top: 9rem;
-  }
+#about {
+  padding-top: 9rem;
 }
 
-@media screen and (width <= 82rem) {
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
   #about {
     padding-top: 7.5rem;
   }
 }
 
-@media screen and (width <= 62rem) {
+@media (max-width: 768px) {
   #about {
     padding-top: 6rem;
   }
+
   .about-content {
     flex-direction: column;
     gap: 2rem;
   }
 }
 
-@media screen and (width <= 43rem) {
+@media (max-width: 576px) {
   #about {
     padding-top: 4.5rem;
   }
+
   .about-content {
     flex-direction: column;
     gap: 1.5rem;

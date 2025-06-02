@@ -9,7 +9,7 @@ import {HiOutlineExternalLink} from "react-icons/hi";
 
 const Portfolio = () => {
 
-  let mobile = window.matchMedia("(width <= 62rem)").matches;
+  let mobile = window.matchMedia("(width <= 768px)").matches;
 
   const portfolioTitles = ['JustTravel', 'MovieReviewer', 'GymApp', 'Portfolio v1'];
   
@@ -25,12 +25,12 @@ const Portfolio = () => {
 
         <div className="portfolio-content">
 
-          {projects.filter(p => portfolioTitles.includes(p.title+'')).map(project => {
+          {projects.filter((p, index, self) => portfolioTitles.includes(p.title+'') && index === self.findIndex((t) => (t.title === p.title))).map(project => {
             return (
 
               <Card3 
-                key={project.title}
-                padding='3rem 3rem 1rem 3rem' 
+                key={Math.random()+project.title}
+                padding='2rem 2rem 1rem 2rem' 
                 gap={mobile ? '1rem' : '5rem'}
                 headerPos={mobile ? 'top' : 'left'}
                 header={

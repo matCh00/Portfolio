@@ -1,9 +1,11 @@
+/* BASIC STYLES */
+
 section#experience {
   flex-direction: column;
   gap: 5rem;
-  min-height: 100vh;
-  margin-top: 5rem;
 }
+
+/* RESPONSIVE STYLES */
 
 .experience-cards {
   display: flex;
@@ -11,7 +13,6 @@ section#experience {
   align-items: stretch;
   gap: 3rem;
 }
-
 
 @media (max-width: 1200px) {
   .experience-cards {

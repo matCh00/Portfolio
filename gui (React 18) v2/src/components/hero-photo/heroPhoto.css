@@ -1,33 +1,37 @@
-@media screen and (width > 82rem) {
+/* BASIC STYLES */
+
+
+
+/* RESPONSIVE STYLES */
+
+.hero-img {
+  height: calc(100vh - 5rem);
+  transform: translateY(6px);
+}
+
+@media (max-width: 1200px) {
   .hero-img {
-    height: calc(100vh - 5rem);
-    transform:  translateY(6px);
+    height: calc(100vh - 7rem);
+    transform: translateY(5px);
   }
 }
 
-@media screen and (width <= 82rem) {
-  .hero-img {
-    height: calc(100vh - 5rem);
-    transform:  translateY(5px);
-  }
-}
-
-@media screen and (width <= 62rem) {
+@media (max-width: 992px) {
   .hero-img {
     height: 50vh;
+    transform: translateY(9px);
   }
+
   .image-cropper {
     background: var(--color-neutral-darker);
     border-radius: 2rem;
   }
 }
 
-@media screen and (width <= 43rem) {
-  .hero-img {
-    height: 50vh;
-  }
-  .image-cropper {
-    background: var(--color-neutral-darker);
-    border-radius: 2rem;
-  }
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }

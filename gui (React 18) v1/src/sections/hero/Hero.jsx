@@ -16,13 +16,14 @@ const Hero = () => {
         </div>
 
         <div className='header-content'>
-          <h4 className="text-light">Cześć! Nazywam się</h4>
+          <h4 style={{whiteSpace: 'nowrap'}} className="text-light">Cześć! Nazywam się</h4>
           <h1>Mateusz</h1>
           <h4>Jestem frontend developerem</h4>
 
           <Actions />
+          
         </div>
-        
+
         <Socials />
 
       </div>

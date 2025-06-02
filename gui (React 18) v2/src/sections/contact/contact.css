@@ -1,18 +1,10 @@
-.contact-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 3rem;
-  width: 100%;
-}
-
+/* BASIC STYLES */
 
 .contact-content-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -24,17 +16,37 @@
   white-space: nowrap;
 }
 
+/* RESPONSIVE STYLES */
 
-@media screen and (width <= 62rem) {
+.contact-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 1200px) {
   .contact-content {
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 }
 
-@media screen and (width <= 43rem) {
+@media (max-width: 992px) {
   .contact-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }

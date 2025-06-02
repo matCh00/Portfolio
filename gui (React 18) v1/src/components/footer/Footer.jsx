@@ -7,9 +7,7 @@ const Footer = () => {
   
   return (
     <footer>
-
-      <a href="#" className='footer-logo'>Mateusz Chalik</a>
-
+      
       <ul className='permalinks'>
         <li><a href="#">Streszczenie</a></li>
         <li><a href="#about">O mnie</a></li>
