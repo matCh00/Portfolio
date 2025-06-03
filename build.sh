@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# RUN:  bash -x ./deploy-all.sh
+# RUN:  ./build.sh
 
 
 # Lista projektów
