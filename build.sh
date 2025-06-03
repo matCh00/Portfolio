@@ -16,6 +16,9 @@ for project in "${projects[@]}"; do
   # Wejdź do folderu projektu
   cd "$project" || { echo "❌ Folder nie istnieje: $project"; exit 1; }
   
+  echo "🧹 Czyszczenie starego builda..."
+  rm -rf build
+
   # Zbuduj projekt
   echo "⌛ Budowanie..."
   if ! npm run build; then
