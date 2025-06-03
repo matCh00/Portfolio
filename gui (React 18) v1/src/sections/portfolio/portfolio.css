@@ -127,11 +127,11 @@
 
 @media (max-width: 768px) {
   .portfolio-carousel-mobile {
-    width: 18rem;
+    width: 50vw;
   }
 
   .portfolio-carousel-desktop {
-    width: 25rem;
+    width: 60vw;
   }
 
   .portfolio-item {
@@ -145,10 +145,10 @@
 
 @media (max-width: 576px) {
   .portfolio-carousel-mobile {
-    width: 18rem;
+    width: 50vw;
   }
 
   .portfolio-carousel-desktop {
-    width: 20rem;
+    width: 60vw;
   }
 }
