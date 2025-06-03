@@ -29,7 +29,7 @@ const About = () => {
           <article className='about-card'>
             <CgCodeSlash className='about-icon'/>
             <h5>Najczęściej używane technologie</h5>
-            <p><FaAngular/> &nbsp; <FaReact/> &nbsp; <DiCss3/> &nbsp; <AiFillHtml5/></p>
+            <p className='technologies'><FaAngular/> <FaReact/> <DiCss3/> <AiFillHtml5/></p>
           </article>
 
           <article className='about-card'>

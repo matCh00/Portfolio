@@ -38,12 +38,7 @@
   padding: 2px;
   border-radius: inherit;
 
-  background: conic-gradient(
-    from var(--angle),
-    var(--color-primary),
-    var(--color-secondary),
-    var(--color-primary)
-  );
+  background: conic-gradient(from var(--angle), var(--color-primary), var(--color-secondary), var(--color-primary));
   animation: spin 2s linear infinite;
 
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);

@@ -6,17 +6,16 @@
   width: 80%;
 }
 
-.contact-option-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .contact-option a {
   display: inline-block;
   margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 
+.contact-option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 /* RESPONSIVE STYLES */
 
 .contact-options {
@@ -29,7 +28,7 @@
 .contact-option {
   text-align: center;
   background: var(--color-bg-variant);
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid transparent;
   border-radius: 1rem;
   transition: var(--transition);

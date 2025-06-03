@@ -24,7 +24,9 @@ const Hero = () => {
           
         </div>
 
-        <Socials />
+        <div className="socials">
+          <Socials />
+        </div>
 
       </div>
     </header>

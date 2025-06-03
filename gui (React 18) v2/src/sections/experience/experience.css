@@ -26,7 +26,7 @@
   grid-area: back;
 }
 .card2:nth-child(3) {
-  grid-area: mob;
+  grid-area: others;
 }
 
 /* RESPONSIVE STYLES */
@@ -36,7 +36,7 @@
   grid-auto-columns: 1fr;
   gap: 3rem;
   width: 100%;
-  grid-template-areas: "front back mob";
+  grid-template-areas: "front back others";
 }
 
 @media (max-width: 1200px) {
@@ -47,7 +47,7 @@
   .experience-content {
     grid-template-areas:
       "front back"
-      "front mob";
+      "front others";
   }
 }
 
@@ -60,6 +60,6 @@
     grid-template-areas:
       "front"
       "back"
-      "mob";
+      "others";
   }
 }

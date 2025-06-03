@@ -1,9 +1,5 @@
 /* BASIC STYLES */
 
-.link {
-  margin-left: 15px;
-}
-
 .portfolio-img {
   height: 25rem;
   object-fit: contain;
@@ -22,6 +18,10 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.link {
+  margin-left: 15px;
 }
 
 .carousel.carousel-slider .control-arrow {
@@ -51,6 +51,10 @@
   gap: 3rem;
 }
 
+.portfolio-img-container {
+  margin: 0 3rem;
+}
+
 .portfolio-header-content {
   display: flex;
   flex-direction: column;
@@ -66,10 +70,6 @@
   padding: 0 0 3rem 0;
 }
 
-.portfolio-img-container {
-  margin: 0 3rem;
-}
-
 @media (max-width: 1200px) {
   #portfolio {
     margin-block: 6rem;
@@ -83,10 +83,14 @@
 @media (max-width: 992px) {
   #portfolio {
     margin-block: 5rem;
+  }  
+
+  .portfolio-content {
+    gap: 2rem;
   }
 
-  .carousel.carousel-slider {
-    padding: 0 0 1rem 0;
+  .portfolio-img-container {
+    margin: 0 1rem;
   }
 
   .portfolio-header-content {
@@ -94,13 +98,10 @@
     margin-bottom: 0;
   }
 
-  .portfolio-img-container {
-    margin: 0 1rem;
+  .carousel.carousel-slider {
+    padding: 0 0 1rem 0;
   }
 
-  .portfolio-content {
-    gap: 2rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -108,12 +109,12 @@
     margin-block: 4rem;
   }
 
-  .portfolio-img-container {
-    margin: -3rem 1rem;
-  }
-
   .portfolio-content h4 {
     margin-top: 1rem;
+  }
+  
+  .portfolio-img-container {
+    margin: -3rem 1rem;
   }
 }
 

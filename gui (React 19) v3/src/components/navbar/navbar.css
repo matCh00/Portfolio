@@ -1,5 +1,8 @@
 /* BASIC STYLES */
 
+
+/* RESPONSIVE STYLES */
+
 nav.notch {
   display: flex;
   flex-direction: column;
@@ -29,8 +32,6 @@ nav.notch a {
 nav.notch a:hover {
   color: var(--color-secondary-dark);
 }
-
-/* RESPONSIVE STYLES */
 
 @media (max-width: 1200px) {
 

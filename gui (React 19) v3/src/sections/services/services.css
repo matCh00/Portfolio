@@ -14,14 +14,20 @@ section#services {
 }
 
 @media (max-width: 1200px) {
-  .services-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
 }
 
 @media (max-width: 992px) {
   .services-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-cards > :nth-child(3) {
+    grid-column: 1 / -1;
+  }
+  
+  .glass-card1:nth-child(3) {
+    width: 100%;
   }
 }
 
@@ -32,7 +38,5 @@ section#services {
 }
 
 @media (max-width: 576px) {
-  .services-cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
+
 }

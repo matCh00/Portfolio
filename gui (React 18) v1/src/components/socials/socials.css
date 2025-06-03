@@ -25,7 +25,9 @@
 }
 
 @media (max-width: 768px) {
-
+  .socials {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {

@@ -1,10 +1,5 @@
 /* BASIC STYLES */
 
-:root {
-  --portrait-height: 28vw;
-  --portrait-width: calc(var(--portrait-height) / 1.5);
-}
-
 @property --rotate {
   syntax: "<angle>";
   initial-value: 150deg;
@@ -52,6 +47,11 @@
 
 /* RESPONSIVE STYLES */
 
+:root {
+  --portrait-width: calc(var(--portrait-height) / 1.5);
+  --portrait-height: 28vw;
+}
+
 header {
   padding: 3rem 0 12rem 0;
   overflow: hidden;
@@ -64,11 +64,12 @@ header {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
 }
 
 .header-content {
@@ -91,10 +92,6 @@ header {
   margin: 0 auto 2rem;
 }
 
-:root {
-  --portrait-height: 28vw;
-}
-
 @media (max-width: 1200px) {
 
 }
@@ -104,65 +101,29 @@ header {
     width: var(--container-width-md);
   }
   
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .me {
     width: 50vw;
     max-width: 350px;
     margin: 0 auto 3rem;
   }
-  
-  .header-content {
-    width: 100%;
-  }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr;
+  }
+
   .header-content {
     margin-top: 5vh;
     width: 100%;
   }
-  
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .socials {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-  }
-  
-  .header-content {
-    margin-top: 0;
-    width: 60%;
-  }
-  
-  .me {
-    width: 27vw;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-  
-  :root {
-    --portrait-height: 28vw;
-  }
 }
 
 @media (max-width: 576px) {
+  :root {
+    --portrait-height: 60vw;
+  }
+  
   header {
     padding: 5rem 0 2rem 0;
   }
@@ -171,9 +132,5 @@ header {
     width: 60vw;
     max-width: 300px;
     margin: 0 auto 1.5rem;
-  }
-  
-  :root {
-    --portrait-height: 60vw;
   }
 }

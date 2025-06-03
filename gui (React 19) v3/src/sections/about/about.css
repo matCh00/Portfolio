@@ -21,15 +21,11 @@ section#about {
 }
 
 @media (max-width: 1200px) {
-  .about-cards {
-    flex-direction: row;
-  }
+
 }
 
 @media (max-width: 992px) {
-  .about-cards {
-    flex-direction: row;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -39,7 +35,5 @@ section#about {
 }
 
 @media (max-width: 576px) {
-  .about-cards {
-    flex-direction: column;
-  }
+
 }

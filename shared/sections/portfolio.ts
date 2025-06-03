@@ -12,7 +12,7 @@ export const projects = [
     subtitle: 'Strona portfolio typu Single Page Application',
     technology: 'React + TypeScript',
     images: [p2_1, p2_2, p2_3, p2_4],
-    desktop: false,
+    desktop: true,
     link: 'https://match00.github.io/Portfolio/v2/'
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: 'Strona portfolio typu Single Page Application',
     technology: 'React + JavaScript',
     images: [p1_1, p1_2, p1_3, p1_4],
-    desktop: false,
+    desktop: true,
     link: 'https://match00.github.io/Portfolio/v1/'
   },
   {

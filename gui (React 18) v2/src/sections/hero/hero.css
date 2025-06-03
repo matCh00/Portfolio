@@ -1,12 +1,12 @@
 /* BASIC STYLES */
 
-.container-hero h4 {
-  color: var(--color-neutral-darker);
+.container-hero h1 {
+  color: var(--color-primary);
   white-space: nowrap;
 }
 
-.container-hero h1 {
-  color: var(--color-primary);
+.container-hero h4 {
+  color: var(--color-neutral-darker);
   white-space: nowrap;
 }
 
