@@ -1,0 +1,63 @@
+/* zmienne: https://colorhunt.co/palettes/dark */
+:root {
+  --color-primary: hsl(240, 20%, 10%);
+  --color-primary-dark: hsl(240, 20%, 7%);
+  --color-primary-darker: hsl(240, 20%, 5%);
+  --color-primary-darkest: hsl(240, 20%, 3%);
+
+  --color-primary-text: hsl(0, 0%, 100%);
+  --color-primary-text-dark: hsl(0, 0%, 80%);
+
+  --color-secondary: hsl(262, 100%, 70%);
+  --color-secondary-dark: hsl(262, 100%, 50%);
+  --color-secondary-darker: hsl(262, 100%, 35%);
+
+  --color-blur: hsla(240, 20%, 70%, 0.1);
+  --color-card: hsla(240, 20%, 10%, 0.8);
+  
+  --ff: "Lato", sans-serif;
+  --fw: 500;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  background: var(--color-primary-darkest);
+  color: var(--color-primary-text);
+}
+
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}
