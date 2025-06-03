@@ -8,7 +8,7 @@ PROJECT_NAME="gui (React 19) v3"
 BUILD_DIR="$PROJECT_NAME/build"   
 
 # katalog GitHub Pages
-DEST_DIR="../4) GitHub/matCh00.github.io"  
+DEST_DIR="../../4) GitHub/matCh00.github.io"  
 
 # komunikat commita – można przekazać jako argument do skryptu
 COMMIT_MSG="${1:-"Update"}"
