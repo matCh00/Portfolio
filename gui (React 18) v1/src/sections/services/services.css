@@ -15,7 +15,7 @@
 
 .service-head {
   background: var(--color-primary);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 3rem 0 3rem 0;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -23,6 +23,7 @@
 .service-head h3 {
   color: var(--color-bg);
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .service-list {

@@ -2,6 +2,7 @@
 
 # RUN:  bash -x ./deploy-all.sh
 
+
 # Lista projektów
 projects=(
   "gui (React 18) v1"
