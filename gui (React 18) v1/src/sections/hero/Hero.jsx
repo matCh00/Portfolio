@@ -8,14 +8,14 @@ import Socials from '../../components/socials/Socials';
 const Hero = () => {
   
   return (
-    <header id='header'>
-      <div className="container header-container">
+    <section id='hero'>
+      <div className="container hero-container">
 
         <div className="me">
           <img src={ME} alt="me" className='me-img'/>
         </div>
 
-        <div className='header-content'>
+        <div className='hero-content'>
           <h4 style={{whiteSpace: 'nowrap'}} className="text-light">Cześć! Nazywam się</h4>
           <h1>Mateusz</h1>
           <h4>Jestem frontend developerem</h4>
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
       </div>
-    </header>
+    </section>
   )
 }
 

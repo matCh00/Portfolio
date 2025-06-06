@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 .carousel {
   display: flex;
@@ -24,6 +24,12 @@
 .portfolio-item-desktop {
   display: flex;
   flex-direction: column;
+}
+
+.portfolio-item:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-primary-variant);
+  transform: translate3d(0px, 40px, -120px);
 }
 
 .portfolio-item h3 {
@@ -80,12 +86,6 @@
 
   transition: var(--transition);
   transform: perspective(750px) translate3d(0px, 0px, -100px) rotateX(25deg) scale(0.95, 1);
-}
-
-.portfolio-item:hover {
-  background: var(--color-secondary);
-  border-color: var(--color-primary-variant);
-  transform: translate3d(0px, 40px, -120px);
 }
 
 .portfolio-description {

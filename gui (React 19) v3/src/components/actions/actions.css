@@ -1,10 +1,10 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
-
-/* RESPONSIVE STYLES */
 .actions {
   margin: 3rem;
 }
+
+/* RESPONSIVE STYLES */
 
 @media (max-width: 1200px) {
 

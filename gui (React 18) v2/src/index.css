@@ -1,25 +1,7 @@
 @import './root-styles.css';
+@import './root-typography.css';
 
-/* BASIC STYLES */
-
-.background-neutral {
-  background: var(--color-neutral-dark);
-}
-.background-primary {
-  background: var(--color-primary);
-}
-.color-neutral {
-  color: var(--color-neutral-dark);
-}
-.color-primary {
-  color: var(--color-primary);
-}
-.color-primary-dark {
-  color: var(--color-primary-dark);
-}
-.color-secondary {
-  color: var(--color-secondary);
-}
+/* STATIC STYLES */
 
 .section-header {
   margin-bottom: 2rem;
@@ -33,27 +15,6 @@
   width: 100%;
 }
 
-.container h4 {
-  color: var(--color-primary-dark);
-}
-
-.container h1 {
-  font-size: 2em;
-  color: var(--color-secondary);
-}
-
-.container h3 {
-  color: var(--color-primary);
-}
-
-a {
-  color: var(--color-secondary);
-  transition: color 300ms ease;
-}
-a:hover {
-  color: var(--color-primary);
-}
-
 .bigger-icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -63,6 +24,7 @@ a:hover {
   opacity: 0;
   transition: opacity 1.5s;
 }
+
 .show {
   opacity: 1;
 }

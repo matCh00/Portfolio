@@ -1,6 +1,13 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
+
 
 /* RESPONSIVE STYLES */
+
+#experience {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
 
 @media (max-width: 1200px) {
 

@@ -7,7 +7,7 @@ import {RiServiceLine} from 'react-icons/ri';
 
 const Nav = () => {
 
-  const [headerRect, setHeaderRect] = useState({top: 0, height: 0});
+  const [heroRect, setHeroRect] = useState({top: 0, height: 0});
   const [aboutRect, setAboutRect] = useState({top: 0, height: 0});
   const [experienceRect, setExperienceRect] = useState({top: 0, height: 0});
   const [servicesRect, setServicesRect] = useState({top: 0, height: 0});
@@ -31,7 +31,7 @@ const Nav = () => {
 
   const handleScroll = () => {
     let s = window.scrollY;
-    let aboutTop = headerRect.height;
+    let aboutTop = heroRect.height;
     let experienceTop = aboutTop + aboutRect.height;
     let servicesTop = experienceTop + experienceRect.height;
     let portfolioTop = servicesTop + servicesRect.height;
@@ -47,7 +47,7 @@ const Nav = () => {
       highlight('#portfolio');
     else if (s + contactRect.height >= contactTop) 
       highlight('#contact');
-    else if (s + headerRect.height < experienceTop)
+    else if (s + heroRect.height < experienceTop)
       highlight('#');
     else 
       highlight('');
@@ -55,7 +55,7 @@ const Nav = () => {
 
 
   const setPos = () => {
-    setHeaderRect({top: document.getElementById('header').getBoundingClientRect().top, height: document.getElementById('header').getBoundingClientRect().height});
+    setHeroRect({top: document.getElementById('hero').getBoundingClientRect().top, height: document.getElementById('hero').getBoundingClientRect().height});
     setAboutRect({top: document.getElementById('about').getBoundingClientRect().top, height: document.getElementById('about').getBoundingClientRect().height});
     setExperienceRect({top: document.getElementById('experience').getBoundingClientRect().top, height: document.getElementById('experience').getBoundingClientRect().height});
     setServicesRect({top: document.getElementById('services').getBoundingClientRect().top, height: document.getElementById('services').getBoundingClientRect().height});

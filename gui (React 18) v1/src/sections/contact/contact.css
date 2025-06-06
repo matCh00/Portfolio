@@ -1,9 +1,14 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 .contact-container {
   display: flex;
   justify-content: center;
   width: 80%;
+}
+
+.contact-option:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
 }
 
 .contact-option a {
@@ -36,11 +41,6 @@
   display: block;
   width: auto;
   margin-bottom: 0;
-}
-
-.contact-option:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
 }
 
 @media (max-width: 1200px) {

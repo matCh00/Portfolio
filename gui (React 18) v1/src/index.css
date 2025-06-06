@@ -1,39 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import './root-styles.css';
+@import './root-typography.css';
 
-/* BASIC STYLES */
-
-h1, h2, h3, h4, h5 {
-  font-weight: 500;
-}
-
-header {
-  min-height: 100vh;
-}
-
-section > h2 {
-  text-align: center;
-  color: var(--color-primary);
-  margin-bottom: 3rem;
-}
-
-section > h5 {
-  text-align: center;
-  color: var(--color-light);
-}
-
-.text-light {
-  color: var(--color-light) !important;
-}
-
-a {
-  color: var(--color-primary);
-  transition: var(--transition);
-}
-
-a:hover {
-  color: var(--color-white);
-}
+/* STATIC STYLES */
 
 .button {
   display: inline-block;
@@ -55,12 +24,6 @@ a:hover {
 .button-primary {
   color: var(--color-bg);
   background: var(--color-primary);
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
 }
 
 /* RESPONSIVE STYLES */

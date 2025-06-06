@@ -1,12 +1,12 @@
 import React from "react";
-import './services.css';
+const styles = require('./services.module.css');
 
 
 const Services = () => {
   
   return (
-    <>
-    </>
+    <section id="services" className={styles.services}>
+    </section>
   )
 }
 

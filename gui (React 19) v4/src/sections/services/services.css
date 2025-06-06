@@ -1,6 +1,13 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
+
 
 /* RESPONSIVE STYLES */
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
 
 @media (max-width: 1200px) {
 

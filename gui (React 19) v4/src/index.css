@@ -1,9 +1,19 @@
 @import './root-styles.css';
+@import './root-typography.css';
 
-/* BASIC STYLES */
+/* STATIC STYLES */
 
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 /* RESPONSIVE STYLES */
+
+section {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
 
 @media (max-width: 1200px) {
 

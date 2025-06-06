@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+section > h2 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+.text-light {
+  color: var(--color-light) !important;
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}

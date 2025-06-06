@@ -1,12 +1,12 @@
 import React from "react";
-import './hero.css';
+const styles = require('./hero.module.css');
 
 
 const Hero = () => {
   
   return (
-    <>
-    </>
+    <section id="hero" className={styles.hero}>
+    </section>
   )
 }
 

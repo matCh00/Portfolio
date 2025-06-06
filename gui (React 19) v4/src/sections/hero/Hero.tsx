@@ -5,8 +5,8 @@ import './hero.css';
 const Hero = () => {
   
   return (
-    <>
-    </>
+    <section id="hero">
+    </section>
   )
 }
 

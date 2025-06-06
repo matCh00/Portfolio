@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 
 /* RESPONSIVE STYLES */
@@ -31,8 +31,4 @@ footer {
   footer {
     height: 3rem;
   }
-}
-
-@media (min-width: 1200.1px) {
-
 }

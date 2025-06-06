@@ -1,4 +1,10 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
+
+.experience-container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
 
 .experience-container > div h3 {
   text-align: center;
@@ -37,12 +43,6 @@
   width: 100%;
   padding: 2rem;
   margin: 0;
-}
-
-.experience-container > div:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
 }
 
 .experience-content {

@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 @property --rotate {
   syntax: "<angle>";
@@ -15,7 +15,7 @@
   }
 }
 
-.header-content h4 {
+.hero-content h4 {
   color: var(--color-primary);
 }
 
@@ -52,7 +52,8 @@
   --portrait-height: 28vw;
 }
 
-header {
+#hero {
+  min-height: 100vh;
   padding: 3rem 0 12rem 0;
   overflow: hidden;
   display: flex;
@@ -60,7 +61,7 @@ header {
   align-items: center;
 }
 
-.header-container {
+.hero-container {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
@@ -72,7 +73,7 @@ header {
   align-items: center;
 }
 
-.header-content {
+.hero-content {
   position: relative;
   margin-top: 15vh;
   text-align: center;
@@ -109,11 +110,11 @@ header {
 }
 
 @media (max-width: 768px) {
-  .header-container {
+  .hero-container {
     grid-template-columns: 1fr;
   }
 
-  .header-content {
+  .hero-content {
     margin-top: 5vh;
     width: 100%;
   }
@@ -124,7 +125,7 @@ header {
     --portrait-height: 60vw;
   }
   
-  header {
+  #hero {
     padding: 5rem 0 2rem 0;
   }
   

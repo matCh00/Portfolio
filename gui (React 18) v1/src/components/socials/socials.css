@@ -1,4 +1,10 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
+
+.socials a {
+  font-size: 1.4em;
+}
+
+/* RESPONSIVE STYLES */
 
 .socials {
   display: flex;
@@ -9,12 +15,6 @@
   right: 4vw;
   top: 0;
 }
-
-.socials a {
-  font-size: 1.4em;
-}
-
-/* RESPONSIVE STYLES */
 
 @media (max-width: 1200px) {
 

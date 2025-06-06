@@ -1,12 +1,12 @@
 import React from "react";
-import './contact.css';
+const styles = require('./contact.module.css');
 
 
 const Contact = () => {
   
   return (
-    <>
-    </>
+    <section id="contact" className={styles.contact}>
+    </section>
   )
 }
 

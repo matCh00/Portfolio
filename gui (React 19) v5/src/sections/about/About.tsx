@@ -1,12 +1,12 @@
 import React from "react";
-import './about.css';
+const styles = require('./about.module.css');
 
 
 const About = () => {
   
   return (
-    <>
-    </>
+    <section id="about" className={styles.about}>
+    </section>
   )
 }
 

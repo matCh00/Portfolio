@@ -1,0 +1,45 @@
+.background-neutral {
+  background: var(--color-neutral-dark);
+}
+
+.background-primary {
+  background: var(--color-primary);
+}
+
+.color-neutral {
+  color: var(--color-neutral-dark);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.container h1 {
+  font-size: 2em;
+  color: var(--color-secondary);
+}
+
+.container h3 {
+  color: var(--color-primary);
+}
+
+.container h4 {
+  color: var(--color-primary-dark);
+}
+
+a {
+  color: var(--color-secondary);
+  transition: color 300ms ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}

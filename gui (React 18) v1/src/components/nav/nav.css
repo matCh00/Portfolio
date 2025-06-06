@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 nav {
   display: flex;
@@ -12,6 +12,10 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
   transform: translateX(-50%);
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 nav a.active {
@@ -28,10 +32,6 @@ nav a {
   border-radius: 50%;
   color: var(--color-light);
   background: transparent;
-}
-
-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1200px) {

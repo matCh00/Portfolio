@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* STATIC STYLES */
 
 @property --angle {
   syntax: "<angle>";
@@ -10,6 +10,22 @@
   to {
     --angle: 360deg;
   }
+}
+
+.glass-card2::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+
+  background: conic-gradient(from var(--angle), var(--color-primary), var(--color-secondary), var(--color-primary));
+  animation: spin 2s linear infinite;
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 /* RESPONSIVE STYLES */
@@ -28,22 +44,6 @@
   gap: 1rem;
   padding: 2em;
   width: 20vw;
-}
-
-.glass-card2::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 2px;
-  border-radius: inherit;
-
-  background: conic-gradient(from var(--angle), var(--color-primary), var(--color-secondary), var(--color-primary));
-  animation: spin 2s linear infinite;
-
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
 }
 
 @media (max-width: 1200px) {

@@ -1,12 +1,12 @@
 import React from "react";
-import './portfolio.css';
+const styles = require('./portfolio.module.css');
 
 
 const Portfolio = () => {
   
   return (
-    <>
-    </>
+    <section id="portfolio" className={styles.portfolio}>
+    </section>
   )
 }
 
