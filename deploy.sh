@@ -4,7 +4,7 @@
 
 
 # katalog z projektem do wdrożenia na match00.github.io
-PROJECT_NAME="gui (React 19) v3"     
+PROJECT_NAME="gui (React 19) v4"     
 BUILD_DIR="$PROJECT_NAME/build"   
 
 # katalog GitHub Pages
@@ -46,9 +46,13 @@ cp -R "$BUILD_DIR/static" "$DEST_DIR/" || exit_with_error "Nie udało się skopi
 echo "Kopiuję asset-manifest.json..."
 cp "$BUILD_DIR/asset-manifest.json" "$DEST_DIR/" || exit_with_error "Nie udało się skopiować asset-manifest.json."
 
-# 3. Skopiuj plik index.html
-echo "Kopiuję index.html..."
+# 3. Kopiuj i modyfikuj index.html
+echo "Kopiuję i modyfikuję index.html..."
 cp "$BUILD_DIR/index.html" "$DEST_DIR/" || exit_with_error "Nie udało się skopiować index.html."
+
+# Zastąp base href na "/"
+sed -i 's|<base href="[^"]*"|><base href="/"|>' "$DEST_DIR/index.html" || 
+  echo "Uwaga: Nie znaleziono base href do zamiany. Kontynuuję..."
 
 echo "=== Kopiowanie zakończone. ==="
 echo
