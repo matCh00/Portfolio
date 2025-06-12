@@ -1,0 +1,40 @@
+/* STATIC STYLES */
+
+.card1-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.3rem;
+}
+
+.card1 {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-card);
+  border: 3px solid var(--color-secondary);
+  border-radius: 3rem;
+  box-shadow: 0 0 10px var(--color-secondary);
+  transition: 0.5s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--color-secondary);
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

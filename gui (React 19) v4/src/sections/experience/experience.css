@@ -1,12 +1,20 @@
 /* STATIC STYLES */
 
+#experience {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  width: 100%;
+  background-color: var(--color-primary-darkest);
+}
 
 /* RESPONSIVE STYLES */
 
-#experience {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
 }
 
 @media (max-width: 1200px) {

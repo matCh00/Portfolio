@@ -1,8 +1,8 @@
 /* zmienne: https://colorhunt.co/palettes/dark */
 :root {
-  --color-bg: #030c1f;
-  --color-bg-variant: #192d4a;
-  --color-primary: rgb(77, 181, 255);
+  --color-bg: hsl(221, 82%, 7%);
+  --color-bg-variant: hsl(216, 49%, 19%);
+  --color-primary: hsl(205, 100%, 65%);
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-secondary: rgba(77, 181, 255, 0.05);
   --color-white: #fff;
@@ -54,4 +54,15 @@ body {
 
 input, textarea, button, select, a {
   -webkit-tap-highlight-color: transparent;
+}
+
+
+img {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -1,0 +1,39 @@
+/* STATIC STYLES */
+
+.card3 {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-card);
+  border: 3px solid var(--color-primary-dark);
+  border-radius: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.card3:hover {
+  border: 3px solid var(--color-secondary-dark);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px var(--color-secondary-dark);
+}
+
+.card3-header {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

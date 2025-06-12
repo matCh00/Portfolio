@@ -1,26 +1,47 @@
 /* STATIC STYLES */
 
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 4rem;
+}
+
+.services-cards h2 {
+  margin-bottom: 1rem;
+}
 
 /* RESPONSIVE STYLES */
 
 #services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  width: 100%;
+  background-color: var(--color-primary-darkest);
+  padding-inline: 15rem;
 }
 
 @media (max-width: 1200px) {
-
+  #services {
+    padding-inline: 12rem;
+  }
 }
 
 @media (max-width: 992px) {
-
+  #services {
+    padding-inline: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
-
+  #services {
+    padding-inline: 8rem;
+  }
 }
 
 @media (max-width: 576px) {
-
+  #services {
+    padding-inline: 2rem;
+  }
 }

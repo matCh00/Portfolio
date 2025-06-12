@@ -1,0 +1,39 @@
+/* STATIC STYLES */
+
+.image-container {
+  background: var(--color-secondary);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--color-secondary);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.image-container:hover {
+  box-shadow: 0 0 40px var(--color-secondary);
+}
+
+/* RESPONSIVE STYLES */
+
+.hero-img {
+  width: 25rem;
+  transform: translate(12px, 10px);
+}
+
+@media (max-width: 1200px) {
+  .hero-img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

@@ -1,0 +1,34 @@
+/* STATIC STYLES */
+
+.card2 {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--color-card);
+  border: 3px solid var(--color-secondary);
+  border-radius: 7rem .5rem 7rem .5rem;
+  transition: 0.5s ease-in-out;
+}
+
+.card2:hover {
+  background-color: var(--color-secondary-darker);
+  border: 3px solid transparent;
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

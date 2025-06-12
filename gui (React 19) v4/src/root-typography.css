@@ -1,0 +1,31 @@
+.color-primary-text {
+  color: var(--color-primary-text);
+}
+
+.color-primary-text-dark {
+  color: var(--color-primary-text-dark);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.color-primary-darker {
+  color: var(--color-primary-darker);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-secondary-dark {
+  color: var(--color-secondary-dark);
+}
+
+.color-secondary-darker {
+  color: var(--color-secondary-darker);
+}

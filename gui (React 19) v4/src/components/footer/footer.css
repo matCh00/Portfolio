@@ -1,11 +1,17 @@
 /* STATIC STYLES */
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 4rem;
+  font-size: 0.8em;
+  background: var(--color-primary-darkest);
+  color: var(--color-primary-text-dark);
+}
 
 /* RESPONSIVE STYLES */
-
-footer {
-  
-}
 
 @media (max-width: 1200px) {
 

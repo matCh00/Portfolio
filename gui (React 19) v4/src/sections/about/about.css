@@ -1,12 +1,33 @@
 /* STATIC STYLES */
 
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-cards > * {
+  flex: 0 0 20rem;
+}
+
+.technologies {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
 /* RESPONSIVE STYLES */
 
 #about {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  width: 100%;
+  background-color: var(--color-primary-darker);
 }
 
 @media (max-width: 1200px) {
@@ -18,9 +39,21 @@
 }
 
 @media (max-width: 768px) {
+  #about {
+    padding-inline: 8rem;
+  }
 
+  .about-cards {
+    flex-direction: column;
+  }
+
+  .about-cards > * {
+    flex: 1;
+  }
 }
 
 @media (max-width: 576px) {
-
+  #about {
+    padding-inline: 2rem;
+  }
 }

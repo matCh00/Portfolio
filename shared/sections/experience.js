@@ -10,10 +10,12 @@ export const experienceFront = [
 
 export const experienceBackend = [
   { key: "Python", value: "" },
+  { key: "Java", value: "" },
   { key: "Firebase", value: "" },
 ];
 
 export const experienceOthers = [
   { key: "React Native", value: "" },
   { key: "Docker", value: "" },
+  { key: "Kubernetes", value: "" },
 ];

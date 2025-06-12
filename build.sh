@@ -8,6 +8,7 @@ projects=(
   "gui (React 18) v1"
   "gui (React 18) v2"
   "gui (React 19) v3"
+  "gui (React 19) v4"
 )
 
 for project in "${projects[@]}"; do
@@ -140,10 +141,16 @@ cat <<EOF > docs/index.html
                 <h2>Portfolio v3</h2>
                 <p>Third version of portfolio</p>
             </a>
+
+            <a href="./v4/" class="project-card">
+                <div class="version-badge">Version 4.0</div>
+                <h2>Portfolio v4</h2>
+                <p>Forth version of portfolio</p>
+            </a>
         </div>
 
         <footer>
-            <p>© 2024 matCh00 | Site hosted on GitHub Pages</p>
+            <p>© 2025 matCh00 | Site hosted on GitHub Pages</p>
         </footer>
     </div>
 </body>
