@@ -46,13 +46,10 @@ cp -R "$BUILD_DIR/static" "$DEST_DIR/" || exit_with_error "Nie udało się skopi
 echo "Kopiuję asset-manifest.json..."
 cp "$BUILD_DIR/asset-manifest.json" "$DEST_DIR/" || exit_with_error "Nie udało się skopiować asset-manifest.json."
 
-# 3. Kopiuj i modyfikuj index.html
-echo "Kopiuję i modyfikuję index.html..."
-cp "$BUILD_DIR/index.html" "$DEST_DIR/" || exit_with_error "Nie udało się skopiować index.html."
+# 3. Skopiuj index.html z dynamiczną modyfikacją <base href=...>
+echo "Kopiuję index.html z aktualizacją <base href=...>..."
+sed -E 's|<base href="[^"]*"/>|<base href="/"/>|' "$BUILD_DIR/index.html" > "$DEST_DIR/index.html" || exit_with_error "Nie udało się zmodyfikować i skopiować index.html."
 
-# Zastąp base href na "/"
-sed -i 's|<base href="[^"]*"|><base href="/"|>' "$DEST_DIR/index.html" || 
-  echo "Uwaga: Nie znaleziono base href do zamiany. Kontynuuję..."
 
 echo "=== Kopiowanie zakończone. ==="
 echo
