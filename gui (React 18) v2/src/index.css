@@ -1,5 +1,6 @@
 @import './root-styles.css';
-@import './root-typography.css';
+@import './root-utils.css';
+@import './utils.css';
 
 /* STATIC STYLES */
 
@@ -7,57 +8,16 @@
   margin-bottom: 2rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.bigger-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.hidden {
-  opacity: 0;
-  transition: opacity 1.5s;
-}
-
-.show {
-  opacity: 1;
-}
-
-.button {
-  color: var(--color-primary);
-  background: var(--color-neutral-dark);
-  border: 1px solid var(--color-neutral-dark);
-  padding: 0.5em 1em;
-  border-radius: 1.5rem;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: background-color 400ms ease;
-}
-
-.button:hover {
-  color: var(--color-neutral-dark);
-  background: var(--color-primary);
-}
-
-.button-primary {
-  color: var(--color-neutral-dark);
-  background: var(--color-secondary);
-}
-
 /* RESPONSIVE STYLES */
 
 section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--color-primary);
+  width: 100%;
+  color: var(--color-primary-text);
   padding: 8rem 12rem;
 }
 

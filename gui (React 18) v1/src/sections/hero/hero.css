@@ -23,7 +23,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   transform: rotate(-3deg);
-  transition: var(--transition);
+  transition: all 400ms ease;
   width: 100%;
 }
 
@@ -99,7 +99,7 @@
 
 @media (max-width: 992px) {
   .container {
-    width: var(--container-width-md);
+    width: 85%;
   }
   
   .me {

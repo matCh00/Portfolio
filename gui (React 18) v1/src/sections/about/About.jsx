@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css';
+import Card1 from '../../components/card1/Card1';
 import {FaAward} from 'react-icons/fa';
 import {VscFolderLibrary} from 'react-icons/vsc';
 import {CgCodeSlash} from 'react-icons/cg';
@@ -20,26 +21,25 @@ const About = () => {
       <div className="container about-container">
         <div className="about-cards">
 
-          <article className='about-card'>
+          <Card1>
             <FaAward className='about-icon'/>
             <h5>Doświadczenie</h5>
             <small>{calculatYearsMonth()} doświadczenia na stanowisku frontend developera</small>
-          </article>
+          </Card1>
 
-          <article className='about-card'>
+          <Card1>
             <CgCodeSlash className='about-icon'/>
             <h5>Najczęściej używane technologie</h5>
             <p className='technologies'><FaAngular/> <FaReact/> <DiCss3/> <AiFillHtml5/></p>
-          </article>
+          </Card1>
 
-          <article className='about-card'>
+          <Card1>
             <VscFolderLibrary className='about-icon'/>
             <h5>Projekty</h5>
             <small>Wiele projektów komercyjnych oraz własnych</small>
-          </article>
+          </Card1>
 
         </div>
-
       </div>
 
     </section>

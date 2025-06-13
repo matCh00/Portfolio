@@ -1,5 +1,6 @@
 @import './root-styles.css';
-@import './root-typography.css';
+@import './root-utils.css';
+@import './utils.css';
 
 /* STATIC STYLES */
 
@@ -32,7 +33,6 @@ main {
 .content {
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,15 +45,6 @@ section {
   text-align: center;
   color: var(--color-primary-text);
   width: 100vw;
-}
-
-.section-header > * {
-  text-shadow: 2px 2px 5px var(--color-primary-darker);
-}
-
-.bigger-icon {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 /* RESPONSIVE STYLES */

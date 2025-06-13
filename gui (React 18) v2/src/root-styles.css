@@ -1,19 +1,27 @@
 /* zmienne: https://colorhunt.co/palettes/dark */
 :root {
-  --color-neutral: hsl(255, 55%, 56%);
-  --color-primary: hsl(0, 0%, 93%);
+  --color-primary: hsl(255, 55%, 56%);
+  --color-primary-dark: hsl(255, 55%, 26%);
+  --color-primary-darker: hsl(255, 55%, 16%);
+  --color-primary-darkest: hsl(246, 100%, 5%);
+
+  --color-primary-text: hsl(255, 55%, 95%);
+  --color-primary-text-dark: hsla(255, 55%, 95%, 0.7);
+
   --color-secondary: hsl(183, 100%, 35%);
+  --color-secondary-dark: hsl(183, 100%, 25%);
+  --color-secondary-darker: hsl(183, 100%, 15%);
   
-  --color-neutral-dark: hsl(255, 55%, 26%);
-  --color-neutral-darker: hsl(255, 55%, 16%);
-  --color-neutral-darkest: hsl(246, 100%, 5%);
-  --color-primary-dark: hsl(0, 0%, 73%);
-  
-  --color-blur: rgba(48, 30, 103, 0.2);
-  --color-card: rgba(48, 30, 103, 0.5);
+  --color-blur: hsla(255, 55%, 26%, 0.1);
+  --color-card: hsla(255, 55%, 26%, 0.7);
   
   --ff: "Lato", sans-serif;
   --fw: 500;
+  
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
 
@@ -45,8 +53,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
-  background: var(--color-neutral-darkest);
-  color: var(--color-primary);
+  background: var(--color-primary-darkest);
+  color: var(--color-primary-text);
 }
 
 

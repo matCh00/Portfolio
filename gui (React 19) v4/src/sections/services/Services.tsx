@@ -19,7 +19,6 @@ const Services = () => {
 
         {services.map(s => {
             return (
-
               <Card2 key={Math.random()}>
                 <h2 className='color-primary-text'>{s.key}</h2>
 

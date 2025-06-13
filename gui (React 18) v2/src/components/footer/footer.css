@@ -6,8 +6,8 @@
 
 footer {
   font-size: 0.8em;
-  background: var(--color-neutral-dark);
-  color: var(--color-primary-dark);
+  background: var(--color-primary-dark);
+  color: var(--color-primary-text-dark);
   display: flex;
   justify-content: space-around;
   align-items: center;

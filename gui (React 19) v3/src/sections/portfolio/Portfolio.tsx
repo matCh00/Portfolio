@@ -21,7 +21,6 @@ const Portfolio = () => {
 
         {projects.filter((p, index, self) => portfolioTitles.includes(p.title+'') && index === self.findIndex((t) => (t.title === p.title))).map(project => {
           return (
-
             <Card3 images={project.images} key={Math.random()+project.title}>
               <h2 className="text-gradient">
                 {project.title} &nbsp;

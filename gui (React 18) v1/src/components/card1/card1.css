@@ -1,0 +1,57 @@
+/* STATIC STYLES */
+
+.card1 {
+  background: var(--color-secondary-dark);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 400ms ease;
+}
+
+.card1:hover {
+  background: transparent;
+  border-color: var(--color-secondary);
+  cursor: default;
+}
+
+.card1 h3 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.card1 h5 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card1 small {
+  font-size: 0.7rem;
+  color: var(--color-primary-text-dark);
+}
+
+.card1 a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

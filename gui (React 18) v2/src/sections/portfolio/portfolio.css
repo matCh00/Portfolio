@@ -29,7 +29,7 @@
 /* RESPONSIVE STYLES */
 
 #portfolio {
-  background: linear-gradient(45deg, var(--color-neutral-darker), var(--color-neutral-dark), var(--color-neutral-darker));
+  background: linear-gradient(45deg, var(--color-primary-darker), var(--color-primary-dark), var(--color-primary-darker));
   margin-block: 6rem;
 }
 

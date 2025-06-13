@@ -50,7 +50,6 @@ cp "$BUILD_DIR/asset-manifest.json" "$DEST_DIR/" || exit_with_error "Nie udało 
 echo "Kopiuję index.html z aktualizacją <base href=...>..."
 sed -E 's|<base href="[^"]*"/>|<base href="/"/>|' "$BUILD_DIR/index.html" > "$DEST_DIR/index.html" || exit_with_error "Nie udało się zmodyfikować i skopiować index.html."
 
-
 echo "=== Kopiowanie zakończone. ==="
 echo
 

@@ -24,7 +24,6 @@ const Portfolio = () => {
 
         {projects.filter((p, index, self) => portfolioTitles.includes(p.title+'') && index === self.findIndex((t) => (t.title === p.title))).map(project => {
           return (
-
             <Card1>
               <h2 className="color-secondary">
                 {project.title} &nbsp;
@@ -36,7 +35,6 @@ const Portfolio = () => {
               <h4 className="color-primary-text">{project.technology}</h4>
 
               <div className="carousel-container">
-
                 <Carousel
                   showStatus={false} 
                   showThumbs={false} 
@@ -56,7 +54,6 @@ const Portfolio = () => {
                     )
                   })}
                 </Carousel>
-
               </div>
             </Card1>
           )

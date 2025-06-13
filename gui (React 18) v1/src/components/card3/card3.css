@@ -1,0 +1,44 @@
+/* STATIC STYLES */
+
+.card3 {
+  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+  background: var(--color-secondary-dark);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  transition: all 400ms ease;
+  transform: perspective(750px) translate3d(0px, 0px, -100px) rotateX(25deg) scale(0.95, 1);
+}
+
+.card3:hover {
+  background: var(--color-blur);
+  border-color: var(--color-secondary);
+  transform: translate3d(0px, 40px, -120px);
+}
+
+.card3 h3 {
+  text-align: center;
+}
+
+.card3 h4 {
+  color: var(--color-primary-text-dark);
+  text-align: center;
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

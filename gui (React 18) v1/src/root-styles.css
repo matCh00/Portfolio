@@ -1,21 +1,27 @@
 /* zmienne: https://colorhunt.co/palettes/dark */
 :root {
-  --color-bg: hsl(221, 82%, 7%);
-  --color-bg-variant: hsl(216, 49%, 19%);
   --color-primary: hsl(205, 100%, 65%);
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-secondary: rgba(77, 181, 255, 0.05);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-primary-dark: hsl(205, 100%, 50%);
+  --color-primary-darker: hsl(205, 100%, 35%);
+  --color-primary-darkest: hsl(205, 100%, 20%);
 
-  --container-width-lg: 75%;
-  --container-width-md: 85%;
-  --container-width-sm: 90%;
+  --color-primary-text: hsl(205, 100%, 95%);
+  --color-primary-text-dark: hsla(205, 100%, 95%, 0.7);
 
-  --transition: all 400ms ease;
+  --color-secondary: hsl(208, 58%, 30%);
+  --color-secondary-dark: hsl(208, 58%, 19%);
+  --color-secondary-darker: hsl(208, 58%, 7%);
 
-  --ff: 'Poppins', sans-serif;
+  --color-blur: hsla(205, 100%, 65%, 0.1);
+  --color-card: hsla(205, 100%, 65%, 0.7);
+
+  --ff: "Poppins", sans-serif;
   --fw: 500;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
 
@@ -47,8 +53,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-secondary-darker);
+  color: var(--color-primary-text);
 }
 
 

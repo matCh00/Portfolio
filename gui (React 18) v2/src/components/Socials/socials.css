@@ -2,7 +2,7 @@
 
 .socials a {
   font-size: 1.4em;
-  color: var(--color-neutral-darkest);
+  color: var(--color-primary-darkest);
 }
 
 .socials a:hover {

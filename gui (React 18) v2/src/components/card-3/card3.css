@@ -15,14 +15,14 @@
 }
 
 .highlight:hover {
-  background: var(--color-neutral-darker);
+  background: var(--color-primary-darker);
   border: 1px solid var(--color-secondary);
 }
 
 /* RESPONSIVE STYLES */
 
 .card3 {
-  background: var(--color-neutral-darkest);
+  background: var(--color-primary-darkest);
   transform: perspective(750px) translate3d(0px, -10px, -100px) rotateX(25deg) scale(0.95, 1);
   transition: transform 400ms ease;
   border-radius: 1rem;

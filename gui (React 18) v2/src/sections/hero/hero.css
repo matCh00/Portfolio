@@ -1,23 +1,23 @@
 /* STATIC STYLES */
 
 .container-hero h1 {
-  color: var(--color-primary);
+  color: var(--color-primary-text);
   white-space: nowrap;
 }
 
 .container-hero h4 {
-  color: var(--color-neutral-darker);
+  color: var(--color-primary-darker);
   white-space: nowrap;
 }
 
 .container-hero h3 {
-  color: var(--color-neutral-darker);
+  color: var(--color-primary-darker);
 }
 
 /* RESPONSIVE STYLES */
 
 #hero {
-  background: linear-gradient(45deg, var(--color-secondary), var(--color-neutral));
+  background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
   font-size: 1.1em;
   height: calc(100vh - 5rem);
 }

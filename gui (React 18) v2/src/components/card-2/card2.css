@@ -18,7 +18,7 @@
 }
 
 .highlight:hover {
-  background: var(--color-neutral-darker);
+  background: var(--color-primary-darker);
   border: 1px solid var(--color-secondary);
 }
 

@@ -9,7 +9,7 @@ footer {
 }
 
 footer a {
-  color: var(--color-bg);
+  color: var(--color-secondary-darker);
 }
 
 .footer-logo {
@@ -25,14 +25,14 @@ footer a {
   padding: 0.8rem;
   border: 1px solid transparent;
   border-radius: 0.7rem;
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-secondary-darker);
+  color: var(--color-primary-text);
 }
 
 .footer-socials a:hover {
   background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  color: var(--color-secondary-darker);
+  border-color: var(--color-secondary-darker);
 }
 
 /* RESPONSIVE STYLES */
@@ -54,7 +54,7 @@ footer a {
 
 .footer-copyright {
   margin-bottom: 4rem;
-  color: var(--color-bg);
+  color: var(--color-secondary-darker);
 }
 
 @media (max-width: 1200px) {

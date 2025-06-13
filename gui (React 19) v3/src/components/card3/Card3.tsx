@@ -17,7 +17,6 @@ const Card3 = ({images, children}: Props) => {
       {children}
 
       <div className="carousel-container">
-
         <Carousel
           showStatus={false} 
           showThumbs={false} 
@@ -37,7 +36,6 @@ const Card3 = ({images, children}: Props) => {
             )
           })}
         </Carousel>
-
       </div>
 
     </div>

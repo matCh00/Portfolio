@@ -1,31 +1,5 @@
 /* STATIC STYLES */
 
-.service {
-  background: var(--color-bg-variant);
-  border: 1px solid var(--color-primary);
-  border-radius: 3rem 0 3rem 0;
-  transition: var(--transition);
-}
-
-.service:hover {
-  background: transparent;
-  border-color: var(--color-primary);
-  cursor: default;
-}
-
-.service-head {
-  background: var(--color-primary);
-  padding: 1.5rem;
-  border-radius: 3rem 0 3rem 0;
-  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.service-head h3 {
-  color: var(--color-bg);
-  text-align: center;
-  font-size: 1.1rem;
-}
-
 .service-list {
   display: flex;
   flex-direction: column;
@@ -68,10 +42,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-
-  .services-container > .service:nth-child(3) {
-    grid-column: 1 / span 2;
-  }
 }
 
 @media (max-width: 768px) {
@@ -82,9 +52,5 @@
   .services-container {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .services-container > .service:nth-child(3) {
-    grid-column: auto;
   }
 }

@@ -7,34 +7,9 @@
 }
 
 .about-container p {
-  color: var(--color-light);
+  color: var(--color-primary-text-dark);
   margin: 2rem;
   text-align: center;
-}
-
-.about-card {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-  transition: var(--transition);
-}
-
-.about-card:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
-}
-
-.about-card h5 {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.about-card small {
-  font-size: 0.7rem;
-  color: var(--color-light);
 }
 
 .about-icon {

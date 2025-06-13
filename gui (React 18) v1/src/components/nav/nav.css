@@ -20,7 +20,7 @@ nav a:hover {
 
 nav a.active {
   color: var(--color-primary);
-  background: var(--color-bg);
+  background: var(--color-secondary-darker);
 }
 
 /* RESPONSIVE STYLES */
@@ -30,7 +30,7 @@ nav a {
   padding: 0.9rem;
   font-size: 1.3rem;
   border-radius: 50%;
-  color: var(--color-light);
+  color: var(--color-primary-text-dark);
   background: transparent;
 }
 

@@ -1,18 +1,5 @@
 /* STATIC STYLES */
 
-.experience-container > div:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
-}
-
-.experience-container > div h3 {
-  text-align: center;
-  color: var(--color-primary);
-  margin-bottom: 2rem;
-  white-space: nowrap;
-}
-
 .experience-details {
   display: flex;
   gap: 0.5rem;
@@ -33,16 +20,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-}
-
-.experience-container > div {
-  background: var(--color-bg-variant);
-  border: 1px solid transparent;
-  border-radius: 2rem;
-  transition: var(--transition);
-  width: 100%;
-  padding: 2rem;
-  margin: 0;
 }
 
 .experience-content {

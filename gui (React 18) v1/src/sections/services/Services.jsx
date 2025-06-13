@@ -1,5 +1,6 @@
 import React from 'react';
 import './services.css';
+import Card2 from '../../components/card2/Card2';
 import {BiCheck} from 'react-icons/bi';
 import {services} from '@portfolio/shared/sections/services';
 
@@ -16,11 +17,7 @@ const Services = () => {
 
         {services.map(s => {
           return (
-            <article className="service" key={s.key}>
-              <div className="service-head">
-                <h3>{s.key}</h3>
-              </div>
-
+            <Card2 key={s.key} header={s.key}>
               <ul className="service-list">
                 {s.values.map(v => {
                   return (
@@ -30,9 +27,8 @@ const Services = () => {
                     </li>
                   )
                 })}
-                
               </ul>
-            </article>
+            </Card2>
           )
         })}
         

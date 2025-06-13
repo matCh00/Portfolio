@@ -1,0 +1,30 @@
+.bigger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+.section-header h1 {
+  font-size: 2em;
+}
+
+.section-header h2 {
+  font-size: 1.8em;
+}
+
+.section-header h3 {
+  font-size: 1.6em;
+}
+
+.section-header h4 {
+  font-size: 1.4em;
+}
+
+.section-header h5 {
+  font-size: 1.2em;
+}
+
+
+.section-header > * {
+  text-shadow: 2px 2px 5px var(--color-primary-darker);
+}

@@ -1,5 +1,6 @@
 @import './root-styles.css';
-@import './root-typography.css';
+@import './root-utils.css';
+@import './utils.css';
 
 /* STATIC STYLES */
 
